@@ -1,0 +1,40 @@
+/***Reset***/
+body {
+    font-size:62.5%; font-family:verdana,helvetica,arial,sans-serif; line-height:1;
+}
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,p,blockquote,th,td,hr{
+    margin:0; padding:0;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+}
+table {
+    border-collapse:collapse; border-spacing:0;
+}
+caption {
+    text-align:left; font-weight:normal;
+}
+th {
+    text-align:left;
+}
+cite,address {
+    font-style:normal;
+}
+ol,ul {
+    list-style:none;
+}
+sub,sup {
+    line-height:2;
+}/*IE6 has different lineheight 1*/
+img {
+    border:none;
+}
+pre,code {
+    font-size:1.2em;
+}/*This is overridden to 14px for non-IE*/
+fieldset {
+    border:0;
+}
+q:before,q:after {
+    content:'';
+}

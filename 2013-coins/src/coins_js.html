@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>coins_js</title>
+        <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/basic.css" media="screen" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/coins.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <div id="coins-js-container">
+            <div id="coins-js-output">
+                <table>
+                    <caption>Minimum number of coin(s) required to make <span id="input-pence">0</span> pence</caption>
+                    <thead>
+                        <tr>
+                            <th>&pound;2</th>
+                            <th>&pound;1</th>
+                            <th>50p</th>
+                            <th>20p</th>
+                            <th>10p</th>
+                            <th>5p</th>
+                            <th>2p</th>
+                            <th>1p</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="output-2-pounds">
+                                0
+                            </td>
+                            <td id="output-1-pound">
+                                0
+                            </td>
+                            <td id="output-50-pence">
+                                0
+                            </td>
+                            <td id="output-20-pence">
+                                0
+                            </td>
+                            <td id="output-10-pence">
+                                0
+                            </td>
+                            <td id="output-5-pence">
+                                0
+                            </td>
+                            <td id="output-2-pence">
+                                0
+                            </td>
+                            <td id="output-1-pence">
+                                0
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="coins-js-input">
+                <form id="coins-js-form">
+                    <label for="input-amount">Input Amount:</label>
+                    <input id="input-amount" name="input-amount" type="text">
+                    <input type="submit" value="Calculate coin(s)">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

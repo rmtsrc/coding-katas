@@ -1,0 +1,9 @@
+{
+    "name": "coins_js",
+    "version": "0.0.1",
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-jasmine": "*",
+        "grunt-contrib-connect": "*"
+    }
+}
