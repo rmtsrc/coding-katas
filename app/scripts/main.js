@@ -21,7 +21,10 @@ require.config({
 });
 
 require([
-    'backbone'
-], function (Backbone) {
+    'backbone',
+    'views/time'
+], function (Backbone, TimeView) {
     Backbone.history.start();
+
+    new TimeView();
 });

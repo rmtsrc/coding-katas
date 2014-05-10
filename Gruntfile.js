@@ -134,7 +134,10 @@ module.exports = function (grunt) {
                     templateOptions: {
                         requireConfigFile: 'app/scripts/main.js',
                         requireConfig: {
-                            baseUrl: 'app/scripts/'
+                            baseUrl: 'app/scripts/',
+                            paths: {
+                                'templates': '../../.tmp/scripts/templates'
+                            }
                         }
                     }
                 }

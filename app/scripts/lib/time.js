@@ -19,12 +19,6 @@ define([], function() {
         return this.getTime() - lastMidnight.getTime();
     };
 
-    // function timePartFormat (num) {
-    //     var s = "" + num;
-    //     while (s.length < 2) s = "0" + s;
-    //     return s;
-    // }
-
     /**
      * Returns the number of decimal seconds since midnight
      *
