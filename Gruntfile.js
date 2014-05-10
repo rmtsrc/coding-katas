@@ -124,11 +124,19 @@ module.exports = function (grunt) {
                 'test/spec/{,*/}*.js'
             ]
         },
-        mocha: {
-            all: {
+        jasmine: {
+            all:{
+                src : '/scripts/{,*/}*.js',
                 options: {
-                    run: true,
-                    src: ['http://localhost:<%= connect.test.options.port %>/index.html']
+                    keepRunner: true,
+                    specs : 'test/spec/**/*.js',
+                    template: require('grunt-template-jasmine-requirejs'),
+                    templateOptions: {
+                        requireConfigFile: 'app/scripts/main.js',
+                        requireConfig: {
+                            baseUrl: 'app/scripts/'
+                        }
+                    }
                 }
             }
         },
@@ -318,8 +326,7 @@ module.exports = function (grunt) {
                 'createDefaultTemplate',
                 'handlebars',
                 'compass',
-                'connect:test',
-                'mocha',
+                'jasmine'
             ];
 
         if(!isConnected) {
