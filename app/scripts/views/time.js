@@ -5,40 +5,86 @@ define([
     'underscore',
     'backbone',
     'templates',
-    'lib/time'
+    'lib/time',
+    'lib/calendar',
+    'lib/calendar/en',
+    'lib/calendar/fr'
 ], function ($, _, Backbone, JST) {
     'use strict';
 
-    var timePartFormat = function (num) {
+    var padNumTwoDecimalPlaces = function (num) {
         var s = '' + num;
-        while (s.length < 2) { s = '0' + s; }
+        while (s.length < 2) {
+            s = '0' + s;
+        }
         return s;
     };
 
     var TimeView = Backbone.View.extend({
         template: JST['app/scripts/templates/time.hbs'],
 
-        el: '#decimalTime',
+        el: 'section[data-role=output]',
 
         model: new Backbone.Model(),
+
+        lang: require('lib/calendar/en'),
 
         initialize: function () {
             this.listenTo(this.model, 'change', this.render);
 
-            setInterval(_.bind(this.updateDecimalTime, this), 864);
+            setInterval(_.bind(this.updateTime, this), 864);
         },
 
         getDate: function () {
             return new Date();
         },
 
-        updateDecimalTime: function () {
-            var d = this.getDate(),
-                decimalTime =   timePartFormat(d.getDecimalHours()) + ':' +
-                                timePartFormat(d.getDecimalMinutes()) + ':' +
-                                timePartFormat(d.getDecimalSeconds());
+        getDecimalTime: function () {
+            var d = this.getDate();
 
-            this.model.set('time', decimalTime);
+            return padNumTwoDecimalPlaces(d.getDecimalHours()) + ':' +
+                padNumTwoDecimalPlaces(d.getDecimalMinutes()) + ':' +
+                padNumTwoDecimalPlaces(d.getDecimalSeconds());
+        },
+
+        getFrcDateString: function () {
+            var d = this.getDate(),
+                frcDate = d.getFrcDate(),
+                frcQuarterName = this.lang['frc']['quarters'][d.getFrcQuarter()],
+                frcMonthName = this.lang['frc']['months'][frcDate['month']],
+                frcDayName = this.lang['frc']['days'][frcDate['month']][frcDate['day']];
+
+            return frcDate['year'] + '-' +
+                padNumTwoDecimalPlaces(frcDate['month']) + '-' +
+                padNumTwoDecimalPlaces(frcDate['day']) + ' ' +
+                frcQuarterName + ' : ' + frcMonthName + ' : ' + frcDayName;
+        },
+
+        getStandardTime: function () {
+            var d = this.getDate();
+
+            return padNumTwoDecimalPlaces(d.getHours()) + ':' +
+                padNumTwoDecimalPlaces(d.getMinutes()) + ':' +
+                padNumTwoDecimalPlaces(d.getSeconds());
+        },
+
+        getStandardDateString: function () {
+            var d = this.getDate(),
+                quarterName = this.lang['standard']['quarters'][d.getQuarter()],
+                month = d.getMonth() + 1,
+                monthName = this.lang['standard']['months'][month],
+                day = d.getDate(),
+                dayName = this.lang['standard']['days'][d.getDay() + 1];
+
+            return d.getFullYear() + '-' +
+                padNumTwoDecimalPlaces(month) + '-' +
+                padNumTwoDecimalPlaces(day) + ' ' +
+                quarterName + ' : ' + monthName + ' : ' + dayName;
+        },
+
+        updateTime: function () {
+            this.model.set('decimalTime', this.getFrcDateString() + ' ' + this.getDecimalTime());
+            this.model.set('time', this.getStandardDateString() + ' ' + this.getStandardTime());
         },
 
         render: function () {

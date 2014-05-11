@@ -1,109 +1,89 @@
 <!doctype html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>JavaScript Decimal Time</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Decimal Time</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
-        <div class="container">
-            <div class="header">
-                <h3 class="text-muted">JavaScript Decimal Time</h3>
-            </div>
+<div class="container">
+    <div class="header">
+        <h3 class="text-muted">JavaScript Decimal Time</h3>
+    </div>
 
-            <div class="well">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="standardTime" checked="checked">
-                    Show standard time
-                  </label>
-                </div>
-
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="seconds" checked="checked">
-                    Show seconds
-                  </label>
-                </div>
-
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="weekNo">
-                    Show week number
-                  </label>
-                </div>
-
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="monthName">
-                    Show month name
-                  </label>
-                </div>
-
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="dayName">
-                    Show day name
-                  </label>
-                </div>
-
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="holoceneCal" checked="checked">
-                    Use Holocene calendar
-                  </label>
-                </div>
-
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="optionsRadios" id="lang" value="en" checked>
-                    English
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="optionsRadios" id="lang" value="fr">
-                    French
-                  </label>
-                </div>
-
-                <small>Datetime based on <a href="https://en.wikipedia.org/wiki/Decimal_time">Decimal time</a>, the <a href="https://en.wikipedia.org/wiki/French_Republican_Calendar">French Republican Calendar</a>, and the <a href="https://en.wikipedia.org/wiki/Holocene_calendar">Holocene calendar</a>.</small>
-            </div>
-
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title">Decimal Time</h3>
-              </div>
-              <div class="panel-body">
-                  <pre id="decimalTime"></pre>
-              </div>
-          </div>
-
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Standard Time</h3>
-                </div>
-                <div class="panel-body">
-                    <pre></pre>
-                </div>
-            </div>
+    <div class="well">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="standardTime" checked>
+                Show standard time
+            </label>
         </div>
 
-        <!-- build:js scripts/main.js -->
-        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
-        <!-- endbuild -->
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="seconds" checked>
+                Show seconds
+            </label>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="quarter" checked>
+                Show quarter
+            </label>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="monthName" checked>
+                Show month name
+            </label>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="dayName" checked>
+                Show day name
+            </label>
+        </div>
+
+        <div class="radio">
+            <label>
+                <input type="radio" name="lang" value="en" checked>
+                English
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="lang" value="fr">
+                French
+            </label>
+        </div>
+
+        <small>Datetime based on <a href="https://en.wikipedia.org/wiki/Decimal_time">Decimal time</a>, and the <a
+            href="https://en.wikipedia.org/wiki/French_Republican_Calendar">French Republican Calendar</a>.
+        </small>
+    </div>
+
+    <section data-role="output"></section>
+</div>
+
+<!-- build:js scripts/main.js -->
+<script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+<!-- endbuild -->
 </body>
 </html>
