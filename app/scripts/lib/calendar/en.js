@@ -90,7 +90,7 @@ define([], function() {
                 27: 'Chili Pepper',
                 28: 'Tomato',
                 29: 'Barley',
-                30: 'Barrel',
+                30: 'Barrel'
             },
             2: {
                 1: 'Apple',
@@ -122,7 +122,7 @@ define([], function() {
                 27: 'Tuberous pea',
                 28: 'Quince',
                 29: 'Service tree',
-                30: 'Roller',
+                30: 'Roller'
             },
             3: {
                 1: 'Rampion',
@@ -154,7 +154,7 @@ define([], function() {
                 27: 'Cork',
                 28: 'Truffle',
                 29: 'Olive',
-                30: 'Shovel',
+                30: 'Shovel'
             },
             4: {
                 1: 'Peat',
@@ -186,7 +186,7 @@ define([], function() {
                 27: 'Lead',
                 28: 'Zinc',
                 29: 'metal',
-                30: 'Sieve',
+                30: 'Sieve'
             },
             5: {
                 1: 'Spurge-laurel',
@@ -218,7 +218,7 @@ define([], function() {
                 27: 'Hazel',
                 28: 'Cyclamen',
                 29: 'Celandine',
-                30: 'Sleigh',
+                30: 'Sleigh'
             },
             6: {
                 1: 'Coltsfoot',
@@ -250,7 +250,7 @@ define([], function() {
                 27: 'Wood Anemone',
                 28: 'Maidenhair fern',
                 29: 'Ash Tree',
-                30: 'Dibber',
+                30: 'Dibber'
             },
             7: {
                 1: 'Primrose',
@@ -282,7 +282,7 @@ define([], function() {
                 27: 'Anemone',
                 28: 'Pansy',
                 29: 'Blueberry',
-                30: 'Knife',
+                30: 'Knife'
             },
             8: {
                 1: 'Rose',
@@ -314,7 +314,7 @@ define([], function() {
                 27: 'Chive',
                 28: 'Bugloss',
                 29: 'Wild mustard',
-                30: 'Shepherd\'s crook',
+                30: 'Shepherd\'s crook'
             },
             9: {
                 1: 'Alfalfa',
@@ -346,7 +346,7 @@ define([], function() {
                 27: 'Verbena',
                 28: 'Thyme Plant',
                 29: 'Peony Plant',
-                30: 'Hand Cart',
+                30: 'Hand Cart'
             },
             10: {
                 1: 'Rye',
@@ -378,7 +378,7 @@ define([], function() {
                 27: 'Garlic',
                 28: 'Tare',
                 29: 'Wheat',
-                30: 'Shawm',
+                30: 'Shawm'
             },
             11: {
                 1: 'Spelt',
@@ -410,7 +410,7 @@ define([], function() {
                 27: 'Rapeseed',
                 28: 'Lupin',
                 29: 'Cotton',
-                30: 'Mill',
+                30: 'Mill'
             },
             12: {
                 1: 'Plum',
@@ -442,10 +442,10 @@ define([], function() {
                 27: 'Goldenrod',
                 28: 'Maize or Corn',
                 29: 'Sweet Chestnut',
-                30: 'Pack Basket',
+                30: 'Pack Basket'
             }
         }
     };
 
-    return lang;
+    return lang.en;
 });

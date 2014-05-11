@@ -24,7 +24,7 @@ define([], function() {
             8: 'août',
             9: 'septembre',
             10: 'octobre',
-            11: 'novembre',
+            11: 'novembre'
         },
          days: {            
             1: 'dimanche',
@@ -69,7 +69,7 @@ define([], function() {
                 27: 'Piment',
                 28: 'Tomate',
                 29: 'Orge',
-                30: 'Tonneau',
+                30: 'Tonneau'
             },
             2: {
                 1: 'Pomme',
@@ -101,7 +101,7 @@ define([], function() {
                 27: 'Macjonc',
                 28: 'Coing',
                 29: 'Cormier',
-                30: 'Rouleau',
+                30: 'Rouleau'
             },
             3: {
                 1: 'Raiponce',
@@ -133,7 +133,7 @@ define([], function() {
                 27: 'Liège',
                 28: 'Truffe',
                 29: 'Olive',
-                30: 'Pelle',
+                30: 'Pelle'
             },
             4: {
                 1: 'Tourbe',
@@ -165,7 +165,7 @@ define([], function() {
                 27: 'Plomb',
                 28: 'Zinc',
                 29: 'Mercure',
-                30: 'Crible',
+                30: 'Crible'
             },
             5: {
                 1: 'Lauréole',
@@ -197,7 +197,7 @@ define([], function() {
                 27: 'Noisetier',
                 28: 'Cyclamen',
                 29: 'Chélidoine',
-                30: 'Traîneau',
+                30: 'Traîneau'
             },
             6: {
                 1: 'Tussilage',
@@ -229,7 +229,7 @@ define([], function() {
                 27: 'Sylvie',
                 28: 'Capillaire',
                 29: 'Frêne',
-                30: 'Plantoir',
+                30: 'Plantoir'
             },
             7: {
                 1: 'Primevère',
@@ -261,7 +261,7 @@ define([], function() {
                 27: 'Anémone',
                 28: 'Pensée',
                 29: 'Myrtille',
-                30: 'Greffoir',
+                30: 'Greffoir'
             },
             8: {
                 1: 'Rose',
@@ -293,7 +293,7 @@ define([], function() {
                 27: 'Civette',
                 28: 'Buglosse',
                 29: 'Sénevé',
-                30: 'Houlette',
+                30: 'Houlette'
             },
             9: {
                 1: 'Luzerne',
@@ -325,7 +325,7 @@ define([], function() {
                 27: 'Verveine',
                 28: 'Thym',
                 29: 'Pivoine',
-                30: 'Chariot',
+                30: 'Chariot'
             },
             10: {
                 1: 'Seigle',
@@ -357,7 +357,7 @@ define([], function() {
                 27: 'Ail',
                 28: 'Vesce',
                 29: 'Blé',
-                30: 'Chalémie',
+                30: 'Chalémie'
             },
             11: {
                 1: 'Épeautre',
@@ -421,10 +421,10 @@ define([], function() {
                 27: 'Verge d\'or',
                 28: 'Maïs',
                 29: 'Marron',
-                30: 'Panier',
+                30: 'Panier'
             }
         }
     };
 
-    return lang;
+    return lang.fr;
 });
