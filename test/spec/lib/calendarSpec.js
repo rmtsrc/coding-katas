@@ -10,21 +10,24 @@ define([
             var date;
 
             beforeEach(function () {
-                date = new Date(2014, 5, 10, 0, 0, 0, 0);
+                date = new Date(2014, 4, 11, 0, 0, 0, 0);
             });
 
             it('should work out leap years', function () {
                 expect(date.isLeapYear()).toBeFalsy();
 
-                date = new Date(2008, 5, 10, 12, 0, 0, 0);
+                date = new Date(2008, 4, 11, 12, 0, 0, 0);
                 expect(date.isLeapYear()).toBeTruthy();
 
-                date = new Date(2020, 5, 10, 12, 0, 0, 0);
+                date = new Date(2020, 4, 11, 12, 0, 0, 0);
                 expect(date.isLeapYear()).toBeTruthy();
             });
 
             describe('French Republican', function () {
                 it('should get the correct number of days since FR epoch', function () {
+                    expect(date.getDaysSinceFrcEpoch()).toBe(80950);
+
+                    date = new Date(2014, 4, 11, 12, 0, 0, 0);
                     expect(date.getDaysSinceFrcEpoch()).toBe(80950);
                 });
 
@@ -43,13 +46,13 @@ define([
                 it('should get the correct quarter', function () {
                     expect(date.getFrcQuarter()).toBe(3);
 
-                    date = new Date(2014, 9, 24, 0, 0, 0, 0);
+                    date = new Date(2014, 8, 24, 0, 0, 0, 0);
                     expect(date.getFrcQuarter()).toBe(1);
 
-                    date = new Date(2014, 12, 23, 0, 0, 0, 0);
+                    date = new Date(2014, 11, 23, 0, 0, 0, 0);
                     expect(date.getFrcQuarter()).toBe(2);
 
-                    date = new Date(2014, 6, 20, 0, 0, 0, 0);
+                    date = new Date(2014, 5, 20, 0, 0, 0, 0);
                     expect(date.getFrcQuarter()).toBe(4);
                 });
 

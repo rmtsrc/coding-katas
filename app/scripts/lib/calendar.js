@@ -15,14 +15,29 @@ define([], function () {
     };
 
     /**
+     * Gets the year quarter
+     *
+     * @returns {number}
+     */
+    Date.prototype.getQuarter = function () {
+        return Math.floor(this.getMonth() / 3) + 1;
+    };
+
+    /**
      * Gets the number of days since the French Republican calendar epoch
+     * 22 September 1792
      *
      * @see http://www.windhorst.org/calendar/
      * @returns {number}
      */
     Date.prototype.getDaysSinceFrcEpoch = function () {
-        var frcEpoch = new Date(1792, 9, 21),
-            dateDiff = this.getTime() - frcEpoch.getTime();
+        var midnight = new Date(this.getFullYear(), this.getMonth(), this.getDate()),
+            frcEpoch = new Date(1792, 9 - 1, 22 - 1),
+            dateDiff = midnight.getTime() - frcEpoch.getTime();
+
+        if (dateDiff <= 0) {
+            throw('The first day of the French Revolutionary Calendar is September 22, 1792.');
+        }
 
         return Math.round(dateDiff / (24 * 60 * 60 * 1000));
     };
@@ -93,7 +108,7 @@ define([], function () {
      * @returns {number}
      */
     Date.prototype.getFrcYear = function () {
-      return this.getFrcDate()['year'];
+        return this.getFrcDate()['year'];
     };
 
 
