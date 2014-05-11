@@ -22,9 +22,14 @@ require.config({
 
 require([
     'backbone',
-    'views/time'
-], function (Backbone, TimeView) {
+    'views/time',
+    'views/timeControl'
+], function (Backbone, TimeView, TimeControlView) {
     Backbone.history.start();
 
+    window.app = window.app || {};
+    window.app.vent = _.extend({}, Backbone.Events);
+
     new TimeView();
+    new TimeControlView();
 });

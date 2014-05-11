@@ -25,14 +25,27 @@ define([
 
         el: 'section[data-role=output]',
 
-        model: new Backbone.Model(),
+        model: new Backbone.Model({
+            showStandardTime: true
+        }),
 
         lang: require('lib/calendar/en'),
 
         initialize: function () {
             this.listenTo(this.model, 'change', this.render);
+            app.vent.on('control:change:checkbox', this.checkboxControlChange, this);
+            app.vent.on('control:change:radio', this.langControlChange, this);
 
             setInterval(_.bind(this.updateTime, this), 864);
+        },
+
+        checkboxControlChange: function (name, show) {
+            this.model.set('show' + name, show);
+        },
+
+        langControlChange: function (name, lang) {
+            this.lang = require('lib/calendar/' + lang);
+            this.render();
         },
 
         getDate: function () {

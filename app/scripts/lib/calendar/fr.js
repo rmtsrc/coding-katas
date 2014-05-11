@@ -1,6 +1,6 @@
 /*global define*/
 
-define([], function() {
+define([], function () {
     'use strict';
 
     var lang = lang || {};
@@ -13,7 +13,7 @@ define([], function() {
             3: 'T3',
             4: 'T4'
         },
-        months: {            
+        months: {
             1: 'janvier',
             2: 'février',
             3: 'mars',
@@ -24,20 +24,41 @@ define([], function() {
             8: 'août',
             9: 'septembre',
             10: 'octobre',
-            11: 'novembre'
+            11: 'novembre',
+            12: 'décembre'
         },
-         days: {            
+        days: {
             1: 'dimanche',
             2: 'lundi',
             3: 'mardi',
             4: 'mercredi',
             5: 'jeudi',
             6: 'vendredi',
-            7: 'samedi'        
+            7: 'samedi'
         }
     };
 
     lang.fr.frc = {
+        quarters: {
+            1: 'Autumn',
+            2: 'Hiver',
+            3: 'Printemps',
+            4: 'Summer'
+        },
+        months: {
+            1: 'Vendémiaire',
+            2: 'Brumaire',
+            3: 'Frimaire',
+            4: 'Nivôse',
+            5: 'Pluviôse',
+            6: 'Ventôse',
+            7: 'Germinal',
+            8: 'Floréal',
+            9: 'Prairial',
+            10: 'Messidor',
+            11: 'Thermidor',
+            12: 'Fructidor'
+        },
         days: {
             1: {
                 1: 'Raisin',
