@@ -10,10 +10,18 @@ define([
     var TimeControlView = Backbone.View.extend({
         el: '.well',
 
+        /**
+         * @var {Backbone.Events}
+         */
         events: {
             'click input': 'controlClick'
         },
 
+        /**
+         * Handler for all control clicks
+         *
+         * @param event
+         */
         controlClick: function (event) {
             var control = event.target,
                 type = control.type,

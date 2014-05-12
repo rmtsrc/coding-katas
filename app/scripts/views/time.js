@@ -12,6 +12,13 @@ define([
 ], function ($, _, Backbone, JST) {
     'use strict';
 
+    /**
+     * Will adds an extra 0 to single place numbers
+     *
+     * @private
+     * @param num
+     * @returns {string}
+     */
     var padNumTwoDecimalPlaces = function (num) {
         var s = '' + num;
         while (s.length < 2) {
@@ -25,8 +32,17 @@ define([
 
         el: 'section[data-role=output]',
 
+        /**
+         * @var {Backbone.Model}
+         */
         model: new Backbone.Model({
-            showStandardTime: true
+            showStandardTime: true,
+            showDate: true,
+            showQuarter: true,
+            showMonthName: true,
+            showDayName: true,
+            showSeconds: true,
+            lang: 'en'
         }),
 
         lang: require('lib/calendar/en'),
@@ -39,49 +55,94 @@ define([
             setInterval(_.bind(this.updateTime, this), 864);
         },
 
+        /**
+         * Updates the model when the model changes
+         *
+         * @param name
+         * @param show
+         */
         checkboxControlChange: function (name, show) {
-            this.model.set('show' + name, show);
+            this.model.set(name, show);
         },
 
+        /**
+         * Handles language changes
+         *
+         * @param name
+         * @param lang
+         */
         langControlChange: function (name, lang) {
             this.lang = require('lib/calendar/' + lang);
             this.render();
         },
 
+        /**
+         * Returns the current date object
+         *
+         * @returns {Date}
+         */
         getDate: function () {
             return new Date();
         },
 
+        /**
+         * Gets decimal time object
+         *
+         * @returns {{hours: string, minutes: string, seconds: string}}
+         */
         getDecimalTime: function () {
             var d = this.getDate();
 
-            return padNumTwoDecimalPlaces(d.getDecimalHours()) + ':' +
-                padNumTwoDecimalPlaces(d.getDecimalMinutes()) + ':' +
-                padNumTwoDecimalPlaces(d.getDecimalSeconds());
+            return {
+                hours: padNumTwoDecimalPlaces(d.getDecimalHours()),
+                minutes: padNumTwoDecimalPlaces(d.getDecimalMinutes()),
+                seconds: padNumTwoDecimalPlaces(d.getDecimalSeconds())
+            };
         },
 
-        getFrcDateString: function () {
+        /**
+         * Gets the French Republican Calendar date
+         *
+         * @returns {{year: *, quarterName: *, month: string, monthName: *, day: string, dayName: *}}
+         */
+        getFrcDate: function () {
             var d = this.getDate(),
                 frcDate = d.getFrcDate(),
                 frcQuarterName = this.lang['frc']['quarters'][d.getFrcQuarter()],
                 frcMonthName = this.lang['frc']['months'][frcDate['month']],
                 frcDayName = this.lang['frc']['days'][frcDate['month']][frcDate['day']];
 
-            return frcDate['year'] + '-' +
-                padNumTwoDecimalPlaces(frcDate['month']) + '-' +
-                padNumTwoDecimalPlaces(frcDate['day']) + ' ' +
-                frcQuarterName + ' : ' + frcMonthName + ' : ' + frcDayName;
+            return {
+                year: frcDate['year'],
+                quarterName: frcQuarterName,
+                month: padNumTwoDecimalPlaces(frcDate['month']),
+                monthName: frcMonthName,
+                day: padNumTwoDecimalPlaces(frcDate['day']),
+                dayName: frcDayName
+            };
         },
 
+        /**
+         * Gets the standard time
+         *
+         * @returns {{hours: string, minutes: string, seconds: string}}
+         */
         getStandardTime: function () {
             var d = this.getDate();
 
-            return padNumTwoDecimalPlaces(d.getHours()) + ':' +
-                padNumTwoDecimalPlaces(d.getMinutes()) + ':' +
-                padNumTwoDecimalPlaces(d.getSeconds());
+            return {
+                hours: padNumTwoDecimalPlaces(d.getHours()),
+                minutes: padNumTwoDecimalPlaces(d.getMinutes()),
+                seconds: padNumTwoDecimalPlaces(d.getSeconds())
+            };
         },
 
-        getStandardDateString: function () {
+        /**
+         * Gets the standard date
+         *
+         * @returns {{year: number, quarterName: *, month: string, monthName: *, day: string, dayName: *}}
+         */
+        getStandardDate: function () {
             var d = this.getDate(),
                 quarterName = this.lang['standard']['quarters'][d.getQuarter()],
                 month = d.getMonth() + 1,
@@ -89,15 +150,24 @@ define([
                 day = d.getDate(),
                 dayName = this.lang['standard']['days'][d.getDay() + 1];
 
-            return d.getFullYear() + '-' +
-                padNumTwoDecimalPlaces(month) + '-' +
-                padNumTwoDecimalPlaces(day) + ' ' +
-                quarterName + ' : ' + monthName + ' : ' + dayName;
+            return {
+                year: d.getFullYear(),
+                quarterName: quarterName,
+                month: padNumTwoDecimalPlaces(month),
+                monthName: monthName,
+                day: padNumTwoDecimalPlaces(day),
+                dayName: dayName
+            };
         },
 
+        /**
+         * Handles model updates on each second tick
+         */
         updateTime: function () {
-            this.model.set('decimalTime', this.getFrcDateString() + ' ' + this.getDecimalTime());
-            this.model.set('time', this.getStandardDateString() + ' ' + this.getStandardTime());
+            this.model.set('frenchRepublicanCalendarDate', this.getFrcDate());
+            this.model.set('decimalTime', this.getDecimalTime());
+            this.model.set('date', this.getStandardDate());
+            this.model.set('time', this.getStandardTime());
         },
 
         render: function () {

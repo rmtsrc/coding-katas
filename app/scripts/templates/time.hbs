@@ -3,7 +3,18 @@
         <h3 class="panel-title">Decimal Time</h3>
     </div>
     <div class="panel-body">
-        <pre>{{decimalTime}}</pre>
+        <code>
+            <span class="glyphicon glyphicon-dashboard"></span>
+            {{#with frenchRepublicanCalendarDate}}
+                {{#if ../showDate}}{{year}}-{{month}}-{{day}}{{/if}}
+                {{#if ../showQuarter}}{{quarterName}}{{/if}}
+                {{#if ../showMonthName}}: {{monthName}}{{/if}}
+                {{#if ../showDayName}}: {{dayName}}{{/if}}
+            {{/with}}
+            {{#with decimalTime}}
+                {{hours}}:{{minutes}}{{#if ../showSeconds}}:{{seconds}}{{/if}}
+            {{/with}}
+        </code>
     </div>
 </div>
 
@@ -13,7 +24,18 @@
         <h3 class="panel-title">Standard Time</h3>
     </div>
     <div class="panel-body">
-        <pre>{{time}}</pre>
+        <code>
+            <span class="glyphicon glyphicon-time"></span>
+            {{#with date}}
+                {{#if ../showDate}}{{year}}-{{month}}-{{day}}{{/if}}
+                {{#if ../showQuarter}}{{quarterName}}{{/if}}
+                {{#if ../showMonthName}}: {{monthName}}{{/if}}
+                {{#if ../showDayName}}: {{dayName}}{{/if}}
+            {{/with}}
+            {{#with time}}
+                {{hours}}:{{minutes}}{{#if ../showSeconds}}:{{seconds}}{{/if}}
+            {{/with}}
+        </code>
     </div>
 </div>
 {{/if}}
