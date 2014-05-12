@@ -43,7 +43,8 @@ define([], function () {
             1: 'Autumn',
             2: 'Hiver',
             3: 'Printemps',
-            4: 'Summer'
+            4: 'Été',
+            5: 'Été'
         },
         months: {
             1: 'Vendémiaire',
@@ -57,7 +58,8 @@ define([], function () {
             9: 'Prairial',
             10: 'Messidor',
             11: 'Thermidor',
-            12: 'Fructidor'
+            12: 'Fructidor',
+            13: 'Sansculottides'
         },
         days: {
             1: {
@@ -410,7 +412,7 @@ define([], function () {
                 27: 'Colza',
                 28: 'Lupin',
                 29: 'Coton',
-                30: 'Moulin',
+                30: 'Moulin'
             },
             12: {
                 1: 'Prune',
@@ -443,6 +445,14 @@ define([], function () {
                 28: 'Maïs',
                 29: 'Marron',
                 30: 'Panier'
+            },
+            13: {
+                1: 'La Fête de la Vertu',
+                2: 'La Fête du Génie',
+                3: 'La Fête du Travail',
+                4: 'La Fête de l\'Opinion',
+                5: 'La Fête des Récompenses',
+                6: 'La Fête de la Révolution'
             }
         }
     };

@@ -1,6 +1,6 @@
 /*global define*/
 
-define([], function() {
+define([], function () {
     'use strict';
 
     var lang = lang || {};
@@ -43,7 +43,8 @@ define([], function() {
             1: 'Autumn',
             2: 'Winter',
             3: 'Spring',
-            4: 'Summer'
+            4: 'Summer',
+            5: 'Summer'
         },
         months: {
             1: 'Grape harvest',
@@ -57,7 +58,8 @@ define([], function() {
             9: 'Pasture',
             10: 'Harvest',
             11: 'Summer heat',
-            12: 'Fruit'
+            12: 'Fruit',
+            13: 'Complementary days'
         },
         days: {
             1: {
@@ -443,6 +445,14 @@ define([], function() {
                 28: 'Maize or Corn',
                 29: 'Sweet Chestnut',
                 30: 'Pack Basket'
+            },
+            13: {
+                1: 'Celebration of Virtue',
+                2: 'Celebration of Talent',
+                3: 'Celebration of Labour',
+                4: 'Celebration of Convictions',
+                5: 'Celebration of Honors (Awards)',
+                6: 'Celebration of the Revolution'
             }
         }
     };

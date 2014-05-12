@@ -63,6 +63,37 @@ define([
                 it('should get the correct day', function () {
                     expect(date.getFrcDay()).toBe(22);
                 });
+
+                it('should get the correct start of the year', function () {
+                    date = new Date(2014, 8, 22, 0, 0, 0, 0);
+                    expect(date.getFrcQuarter()).toBe(1);
+                    expect(date.getFrcMonth()).toBe(1);
+                    expect(date.getFrcDay()).toBe(1);
+
+                    date = new Date(1900, 8, 23, 0, 0, 0, 0);
+                    expect(date.getFrcQuarter()).toBe(1);
+                    expect(date.getFrcMonth()).toBe(1);
+                    expect(date.getFrcDay()).toBe(1);
+                });
+
+                describe('Holidays', function () {
+                   it('should get correct date for holidays', function () {
+                       date = new Date(2014, 8, 17, 0, 0, 0, 0);
+                       expect(date.getFrcQuarter()).toBe(5);
+                       expect(date.getFrcMonth()).toBe(13);
+                       expect(date.getFrcDay()).toBe(1);
+
+                       date = new Date(2014, 8, 21, 0, 0, 0, 0);
+                       expect(date.getFrcQuarter()).toBe(5);
+                       expect(date.getFrcMonth()).toBe(13);
+                       expect(date.getFrcDay()).toBe(5);
+
+                       date = new Date(1900, 8, 22, 0, 0, 0, 0);
+                       expect(date.getFrcQuarter()).toBe(5);
+                       expect(date.getFrcMonth()).toBe(13);
+                       expect(date.getFrcDay()).toBe(6);
+                   })
+                });
             });
         });
     });
