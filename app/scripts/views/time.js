@@ -1,4 +1,4 @@
-/*global define*/
+/*global define, app*/
 
 define([
     'jquery',
@@ -7,6 +7,7 @@ define([
     'templates',
     'lib/time',
     'lib/calendar',
+    'lib/romanNumerals',
     'lib/calendar/en',
     'lib/calendar/fr'
 ], function ($, _, Backbone, JST) {
@@ -38,6 +39,10 @@ define([
         model: new Backbone.Model({
             showStandardTime: true,
             showDate: true,
+            showYear: true,
+            showYearInRoman: true,
+            showMonth: true,
+            showDay: true,
             showQuarter: true,
             showMonthName: true,
             showDayName: true,
@@ -101,9 +106,31 @@ define([
         },
 
         /**
+         * Returns an object with the dates formated based on user selection
+         *
+         * @returns {Object}
+         */
+        getDateStringAsObj: function (year, month, day, quarterName, monthName, dayName) {
+            var date = [];
+            if (this.model.get('showYear')) date.push(year);
+            if (this.model.get('showMonth')) date.push(padNumTwoDecimalPlaces(month));
+            if (this.model.get('showDay')) date.push(padNumTwoDecimalPlaces(day));
+
+            var dateName = [];
+            if (this.model.get('showQuarter')) dateName.push(quarterName);
+            if (this.model.get('showMonthName')) dateName.push(monthName);
+            if (this.model.get('showDayName')) dateName.push(dayName);
+
+            return {
+                date: date.join('-'),
+                dateName: dateName.join(' : ')
+            };
+        },
+
+        /**
          * Gets the French Republican Calendar date
          *
-         * @returns {{year: *, quarterName: *, month: string, monthName: *, day: string, dayName: *}}
+         * @returns {{year: *, quarterName: string, month: number, monthName: string, day: number, dayName: string}}
          */
         getFrcDate: function () {
             var d = this.getDate(),
@@ -112,14 +139,14 @@ define([
                 frcMonthName = this.lang['frc']['months'][frcDate['month']],
                 frcDayName = this.lang['frc']['days'][frcDate['month']][frcDate['day']];
 
-            return {
-                year: frcDate['year'],
-                quarterName: frcQuarterName,
-                month: padNumTwoDecimalPlaces(frcDate['month']),
-                monthName: frcMonthName,
-                day: padNumTwoDecimalPlaces(frcDate['day']),
-                dayName: frcDayName
-            };
+            return this.getDateStringAsObj(
+                this.model.get('showYearInRoman') ? Number(frcDate['year']).toRoman() : frcDate['year'],
+                frcDate['month'],
+                frcDate['day'],
+                frcQuarterName,
+                frcMonthName,
+                frcDayName
+            );
         },
 
         /**
@@ -140,24 +167,25 @@ define([
         /**
          * Gets the standard date
          *
-         * @returns {{year: number, quarterName: *, month: string, monthName: *, day: string, dayName: *}}
+         * @returns {{year: number, quarterName: string, month: number, monthName: string, day: number, dayName: string}}
          */
         getStandardDate: function () {
             var d = this.getDate(),
+                year = d.getFullYear(),
                 quarterName = this.lang['standard']['quarters'][d.getQuarter()],
                 month = d.getMonth() + 1,
                 monthName = this.lang['standard']['months'][month],
                 day = d.getDate(),
                 dayName = this.lang['standard']['days'][d.getDay() + 1];
 
-            return {
-                year: d.getFullYear(),
-                quarterName: quarterName,
-                month: padNumTwoDecimalPlaces(month),
-                monthName: monthName,
-                day: padNumTwoDecimalPlaces(day),
-                dayName: dayName
-            };
+            return this.getDateStringAsObj(
+                year,
+                month,
+                day,
+                quarterName,
+                monthName,
+                dayName
+            );
         },
 
         /**

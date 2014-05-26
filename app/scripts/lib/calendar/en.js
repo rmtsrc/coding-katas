@@ -187,7 +187,7 @@ define([], function () {
                 26: 'Tin',
                 27: 'Lead',
                 28: 'Zinc',
-                29: 'metal',
+                29: 'Metal',
                 30: 'Sieve'
             },
             5: {
@@ -312,7 +312,7 @@ define([], function () {
                 23: 'Borage',
                 24: 'Valerian',
                 25: 'Carp',
-                26: 'shrub',
+                26: 'Shrub',
                 27: 'Chive',
                 28: 'Bugloss',
                 29: 'Wild mustard',

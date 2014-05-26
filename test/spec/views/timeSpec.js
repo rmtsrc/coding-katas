@@ -39,12 +39,8 @@ define([
                 view.updateTime();
 
                 expect(view.model.set).toHaveBeenCalledWith('frenchRepublicanCalendarDate', {
-                    year: 222,
-                    quarterName: 'Spring',
-                    month: '08',
-                    monthName: 'Flower',
-                    day: '22',
-                    dayName: 'Fritillary'
+                    date: 'CCXXII-08-22',
+                    dateName: 'Spring : Flower : Fritillary'
                 });
                 expect(view.model.set).toHaveBeenCalledWith('decimalTime', {
                     hours: '00',
@@ -52,12 +48,8 @@ define([
                     seconds: '00'
                 });
                 expect(view.model.set).toHaveBeenCalledWith('date', {
-                    year: 2014,
-                    quarterName: 'Q2',
-                    month: '05',
-                    monthName: 'May',
-                    day: '11',
-                    dayName: 'Sunday'
+                    date: '2014-05-11',
+                    dateName: 'Q2 : May : Sunday'
                 });
                 expect(view.model.set).toHaveBeenCalledWith('time', {
                     hours: '00',
@@ -74,12 +66,8 @@ define([
                 view.updateTime();
 
                 expect(view.model.set).toHaveBeenCalledWith('frenchRepublicanCalendarDate', {
-                    year: 222,
-                    quarterName: 'Spring',
-                    month: '08',
-                    monthName: 'Flower',
-                    day: '22',
-                    dayName: 'Fritillary'
+                    date: 'CCXXII-08-22',
+                    dateName: 'Spring : Flower : Fritillary'
                 });
                 expect(view.model.set).toHaveBeenCalledWith('decimalTime', {
                     hours: '05',
@@ -87,12 +75,8 @@ define([
                     seconds: '00'
                 });
                 expect(view.model.set).toHaveBeenCalledWith('date', {
-                    year: 2014,
-                    quarterName: 'Q2',
-                    month: '05',
-                    monthName: 'May',
-                    day: '11',
-                    dayName: 'Sunday'
+                    date: '2014-05-11',
+                    dateName: 'Q2 : May : Sunday'
                 });
                 expect(view.model.set).toHaveBeenCalledWith('time', {
                     hours: '12',

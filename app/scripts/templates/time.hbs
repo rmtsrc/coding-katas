@@ -6,10 +6,8 @@
         <code>
             <span class="glyphicon glyphicon-dashboard"></span>
             {{#with frenchRepublicanCalendarDate}}
-                {{#if ../showDate}}{{year}}-{{month}}-{{day}}{{/if}}
-                {{#if ../showQuarter}}{{quarterName}}{{/if}}
-                {{#if ../showMonthName}}: {{monthName}}{{/if}}
-                {{#if ../showDayName}}: {{dayName}}{{/if}}
+                {{date}}
+                {{dateName}}
             {{/with}}
             {{#with decimalTime}}
                 {{hours}}:{{minutes}}{{#if ../showSeconds}}:{{seconds}}{{/if}}
@@ -27,10 +25,8 @@
         <code>
             <span class="glyphicon glyphicon-time"></span>
             {{#with date}}
-                {{#if ../showDate}}{{year}}-{{month}}-{{day}}{{/if}}
-                {{#if ../showQuarter}}{{quarterName}}{{/if}}
-                {{#if ../showMonthName}}: {{monthName}}{{/if}}
-                {{#if ../showDayName}}: {{dayName}}{{/if}}
+                {{date}}
+                {{dateName}}
             {{/with}}
             {{#with time}}
                 {{hours}}:{{minutes}}{{#if ../showSeconds}}:{{seconds}}{{/if}}
