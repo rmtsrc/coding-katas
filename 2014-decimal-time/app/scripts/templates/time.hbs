@@ -1,0 +1,37 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Decimal Time</h3>
+    </div>
+    <div class="panel-body">
+        <code>
+            <span class="glyphicon glyphicon-dashboard"></span>
+            {{#with frenchRepublicanCalendarDate}}
+                {{date}}
+                {{dateName}}
+            {{/with}}
+            {{#with decimalTime}}
+                {{hours}}:{{minutes}}{{#if ../showSeconds}}:{{seconds}}{{/if}}
+            {{/with}}
+        </code>
+    </div>
+</div>
+
+{{#if showStandardTime}}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Standard Time</h3>
+    </div>
+    <div class="panel-body">
+        <code>
+            <span class="glyphicon glyphicon-time"></span>
+            {{#with date}}
+                {{date}}
+                {{dateName}}
+            {{/with}}
+            {{#with time}}
+                {{hours}}:{{minutes}}{{#if ../showSeconds}}:{{seconds}}{{/if}}
+            {{/with}}
+        </code>
+    </div>
+</div>
+{{/if}}
