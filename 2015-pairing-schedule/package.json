@@ -1,0 +1,29 @@
+{
+  "name": "pairing-schedule",
+  "version": "1.0.0",
+  "main": "js/PairingSchedule.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer",
+    "test": "jest"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2"
+  }
+}

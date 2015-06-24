@@ -2,6 +2,10 @@
 
 Coding Katas which I've completed over the years.
 
+## [2015-pairing-schedule](2015-pairing-schedule)
+
+Accepts a list of developers and displays paired programming schedule.
+
 ## [2014-decimal-time](2014-decimal-time)
 
 Displays the current time in [Decimal time](https://en.wikipedia.org/wiki/Decimal_time).

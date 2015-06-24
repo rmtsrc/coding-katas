@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pairing Schedule</title>
+  </head>
+  <body>
+    <h1>Pairing Schedule</h1>
+
+    <pre id="pairs"></pre>
+
+    <form id="add-new-person">
+      <input id="person" type="text" required pattern="[a-zA-Z]+" placeholder="Add two or more people" />
+      <input type="submit" value="Add person" />
+    </form>
+
+    <script type="module">
+      import { appEntryPoint } from './js/app.js';
+      appEntryPoint(document.querySelector.bind(document));
+    </script>
+  </body>
+</html>
