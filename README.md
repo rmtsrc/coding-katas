@@ -2,6 +2,10 @@
 
 Coding Katas which I've completed over the years.
 
+## [2016-martian-robots](2016-martian-robots)
+
+Controlling and tracking a robot on a defined grid.
+
 ## [2015-pairing-schedule](2015-pairing-schedule)
 
 Accepts a list of developers and displays paired programming schedule.

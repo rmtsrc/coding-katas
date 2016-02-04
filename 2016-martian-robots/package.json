@@ -1,0 +1,13 @@
+{
+  "name": "martian-robots",
+  "version": "0.0.1",
+  "description": "Martian Robots Problem - Coding Kata",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
