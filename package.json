@@ -1,0 +1,48 @@
+{
+  "name": "bill-viewer",
+  "version": "0.0.1",
+  "description": "Bill Viewer",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:dev": "webpack-dev-server --inline --content-base public/ --history-api-fallback --progress --colors --host 0.0.0.0 --port 3000 --watch-poll",
+    "start:prod": "npm run build && node src/server.bundle.js",
+    "build:client": "webpack",
+    "build:server": "webpack --config webpack.server.config.js",
+    "build": "npm run build:client && npm run build:server",
+    "test": "mocha --recursive --compilers js:babel-register",
+    "posttest": "snyk test"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "bootstrap-material-design": "^0.3.0",
+    "compression": "^1.6.1",
+    "if-env": "^1.0.0",
+    "lodash": "^4.6.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0",
+    "reactable": "^0.12.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-plugin-transform-react-jsx": "^6.6.5",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.7.2",
+    "chai": "^3.5.0",
+    "http-server": "^0.8.5",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "snyk": "^1.11.3",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rmtsrc/bill-viewer.git"
+  }
+}
