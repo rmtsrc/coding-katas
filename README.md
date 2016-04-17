@@ -2,6 +2,10 @@
 
 Coding Katas which I've completed over the years.
 
+## [2016-bill](2016-bill)
+
+Download, parse, and display a customers bill via React.
+
 ## [2016-martian-robots](2016-martian-robots)
 
 Controlling and tracking a robot on a defined grid.
