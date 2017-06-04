@@ -1,0 +1,23 @@
+[{
+    "id": "falafel",
+    "question": "Do you like falafel?",
+    "groups": [{
+      "trigger": "YES",
+      "questions": [{
+        "id": "halloumi",
+        "question": "Do you like halloumi?",
+        "groups": [{
+          "trigger": "YES",
+          "questions": [{
+            "id": "grilled",
+            "text": "Do you like it grilled?"
+          }]
+        }]
+      }]
+    }]
+  },
+  {
+    "id": "burrito",
+    "question": "Do you like burrito?"
+  }
+]
