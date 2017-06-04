@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
+    "test:watch": "ava --watch",
     "dev": "chokidar '**/*.js' -c 'ava'"
   },
   "keywords": [],
