@@ -1,11 +1,11 @@
 {
-  "name": "qmg-js-exercise",
+  "name": "js-exercise",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "test:watch": "ava --watch",
+    "test:watch": "chokidar '**/*.js' -c 'ava'",
     "dev": "chokidar '**/*.js' -c 'ava'"
   },
   "keywords": [],

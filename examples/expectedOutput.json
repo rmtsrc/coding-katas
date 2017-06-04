@@ -12,11 +12,11 @@
     "type": "yesno",
     "text": "Let us know about this"
   }, {
-    "id": "question3-YES-question1",
+    "id": "question3-123-question1",
     "type": "text",
     "text": "Do you like nested questions?"
   }, {
-    "id": "question3-YES-question1-NO-said-no",
+    "id": "question3-123-question1-NO-said-no",
     "type": "number",
     "text": "why?"
   }, {

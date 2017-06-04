@@ -2,11 +2,22 @@
 
 ## Installation and execution
 
-You are in the process (good luck!) for a JS developer position, so you know what to do with this, right?.
+Via `yarn`:
+```shell
+yarn
+yarn test
+```
+
+Via `npm`:
+```shell
+npm install
+npm test
+```
+
+Tip: use `yarn test:watch` to watch how code changes affect tests in real time.
 
 ## The problem
 
-As you already know from your previous research for this position, most insurance-related online businesses rely at one point or another on filling up a form of some sort.
 In this particular case, the API returns the following structure representing a questionset:
 
 > A questionset is an array of questions

@@ -15,7 +15,7 @@
     "question": "Let us know about this",
     "groups": [
       {
-        "trigger": "YES",
+        "trigger": "123",
         "questions": [
           {
             "id": "question1",
