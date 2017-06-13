@@ -2,6 +2,10 @@
 
 Coding Katas which I've completed over the years.
 
+## [2017-flatten-tree-questions-answers](2017-flatten-tree-questions-answers)
+
+Takes an existing question set and user answers flattening it into a single usable data structure.
+
 ## [2016-bill](2016-bill)
 
 Download, parse, and display a customers bill via React.
