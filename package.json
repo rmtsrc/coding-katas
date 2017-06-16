@@ -1,0 +1,12 @@
+{
+  "name": "yld-lazy",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "ava",
+    "test:watch": "ava --watch"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ava": "^0.19.1"
+  }
+}
