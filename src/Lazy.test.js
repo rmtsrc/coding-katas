@@ -7,7 +7,7 @@ test.before(() => {
   computation = new Lazy();
 });
 
-test('will evaluate input against an added method', t => {
+test.only('will evaluate input against an added method', t => {
   const actual = computation.add(Math.sqrt).evaluate([1, 4, 9]);
 
   t.deepEqual(actual, [1, 2, 3]);
