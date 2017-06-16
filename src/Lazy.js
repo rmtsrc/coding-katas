@@ -3,10 +3,10 @@ class Lazy {
     this.methods = [];
   }
 
-  add (fn, arg) {
+  add (fn) {
     this.methods.push({
       fn,
-      arg,
+      args: arguments,
     });
     return this;
   }
@@ -17,7 +17,12 @@ class Lazy {
     return values.map(value => {
       accumulator = value;
       this.methods.forEach(method => {
-        accumulator = method.fn(accumulator, method.arg);
+        if (method.args.length >= 1) {
+          method.args[0] = accumulator;
+          accumulator = method.fn.apply(null, method.args);
+        } else {
+          accumulator = method.fn(accumulator);
+        }
       });
       return accumulator;
     });
