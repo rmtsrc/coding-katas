@@ -2,17 +2,22 @@ const test = require('ava');
 const Lazy = require('./Lazy');
 
 let computation;
+const addOne = value => value + 1;
 
-test.before(() => {
+test.beforeEach(() => {
   computation = new Lazy();
 });
 
-test.only('adds 2 if the method is added twice', t => {
-  const addOne = value => value + 1;
-
+test('adds 2 if the method is added twice', t => {
   const actual = computation.add(addOne).add(addOne).evaluate([1]);
 
   t.deepEqual(actual, [3]);
+});
+
+test('adds 2 if the method is added twice to both values', t => {
+  const actual = computation.add(addOne).add(addOne).evaluate([1, 2]);
+
+  t.deepEqual(actual, [3, 4]);
 });
 
 test('evaluate input against an added method', t => {
