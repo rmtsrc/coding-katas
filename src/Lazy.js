@@ -10,17 +10,15 @@ class Lazy {
 
   evaluate (values) {
     let accumulator;
-    let newValues = [];
 
-    values.forEach(value => {
+    return values.map(value => {
       accumulator = value;
       this.methods.forEach(method => {
         accumulator = method(accumulator);
       });
-      newValues.push(accumulator);
+      return accumulator;
     });
 
-    return newValues;
   }
 }
 
