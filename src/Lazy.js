@@ -9,9 +9,16 @@ class Lazy {
   }
 
   evaluate (values) {
-    return values.map(value =>
-      this.methods.reduce((acc, method) => method(value), value)
-    );
+    let accumulator;
+
+    values.forEach(value => {
+      accumulator = value;
+      this.methods.forEach(method => {
+        accumulator = method(accumulator);
+      });
+    });
+
+    return [accumulator];
   }
 }
 
