@@ -14,12 +14,8 @@ class Lazy {
   evaluate (values) {
     return values.map(value =>
       this.methods.reduce((accumulator, method) => {
-        if (method.args.length >= 1) {
-          method.args[0] = accumulator;
-          return method.fn.apply(null, method.args);
-        } else {
-          return method.fn(accumulator);
-        }
+        method.args[0] = accumulator;
+        return method.fn.apply(null, method.args);
       }, value)
     );
   }
