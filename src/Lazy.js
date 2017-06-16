@@ -12,20 +12,16 @@ class Lazy {
   }
 
   evaluate (values) {
-    let accumulator;
-
-    return values.map(value => {
-      accumulator = value;
-      this.methods.forEach(method => {
+    return values.map(value =>
+      this.methods.reduce((accumulator, method) => {
         if (method.args.length >= 1) {
           method.args[0] = accumulator;
-          accumulator = method.fn.apply(null, method.args);
+          return method.fn.apply(null, method.args);
         } else {
-          accumulator = method.fn(accumulator);
+          return method.fn(accumulator);
         }
-      });
-      return accumulator;
-    });
+      }, value)
+    );
   }
 }
 
