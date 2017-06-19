@@ -47,3 +47,9 @@ test('times by two and plus one', t => {
 
   t.deepEqual(actual, [3, 5, 7]);
 });
+
+test('correct order of params', t => {
+  const computation = new Lazy();
+  const result = computation.add(a => a, 1).evaluate([1, 2, 3]);
+  t.deepEqual(result, [1, 1, 1]);
+});
