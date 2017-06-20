@@ -1,4 +1,4 @@
-# YLD Code Challenge
+# Lazy Evaluate
 
 ## Installation and testing
 
@@ -8,7 +8,7 @@ Run: `npm install` to install testing dependences and `npm test` to run the code
 
 We'd like you to complete a short programming exercise in JavaScript. It shouldn't take longer than an hour to complete. Hopefully you will find the challenge fun!
 
- * We are interested in seeing your ability to solve an algorithmic problem.
+* We are interested in seeing your ability to solve an algorithmic problem.
 
 * It may be tempting to Google the answer for it if you're getting stuck. Please don't. We know there are solutions out there on the internet. Keep calm, you may find it helps to work through the data structures and how they flow through the execution of the algorithm in a simple example case.
 
@@ -18,10 +18,7 @@ If we like your submission and ask you in for a face-to-face interview, there wi
 
 * You will get the opportunity to demonstrate your skills on a different, gentler problem. (We recognise that problem-solving under the pressure of a face-to-face interview can be significantly more challenging.)
 
-**Please submit your solution and any notes as a tarball or zip file and name the file with your full name. Do not publish your solution**
-
 Good Luck!
-
 
 ## Instructions
 
@@ -29,12 +26,10 @@ Lazy evaluation is an evaluation strategy which delays the evaluation of an expr
 
 The challenge is for you to implement `Lazy`. The requirements of Lazy and the specification of its interface follows.
 
-
 **`Lazy()`**
 
 Constructor. Creates a new instance of a Lazy which models a lazy computation.
 A Lazy instance has two methods detailed below.
-
 
 **`add(fn[, arg1, arg2, ...])`**
 
