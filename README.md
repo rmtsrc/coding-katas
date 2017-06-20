@@ -2,6 +2,10 @@
 
 Coding Katas which I've completed over the years.
 
+## [2017-lazy-evaluate](2017-lazy-evaluate)
+
+Evaluate a chain of functions at a later stage when the value is needed.
+
 ## [2017-flatten-tree-questions-answers](2017-flatten-tree-questions-answers)
 
 Takes an existing question set and user answers flattening it into a single usable data structure.
