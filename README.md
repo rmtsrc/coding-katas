@@ -2,6 +2,10 @@
 
 Coding Katas which I've completed over the years.
 
+## [2017-todo-react-redux-graphql-fullstack](2017-todo-react-redux-graphql-fullstack)
+
+A fullstack todo app application written using and tested using Docker, Node, React, Redux, Jest, GraphQL and PostgreSQL.
+
 ## [2017-lazy-evaluate](2017-lazy-evaluate)
 
 Evaluate a chain of functions at a later stage when the value is needed.

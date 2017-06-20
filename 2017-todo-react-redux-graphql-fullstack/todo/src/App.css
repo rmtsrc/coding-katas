@@ -1,0 +1,14 @@
+.App {
+  margin: 20px;
+  text-align: center;
+}
+
+/* CSS Reset browser button style */
+button {
+  background: none !important;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  cursor: pointer;
+}
