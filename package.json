@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "connected-react-router": "4.5.0",
+    "lodash": "^4.17.15",
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "react-redux": "5.1.1",
@@ -23,6 +24,7 @@
     "serve": "10.1.1"
   },
   "devDependencies": {
+    "deep-freeze": "^0.0.1",
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.7.0",
     "enzyme-to-json": "3.3.4",

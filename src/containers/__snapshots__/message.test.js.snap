@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handles JavaScript hover 1`] = `
+<Fragment>
+  <dt>
+    <img
+      alt="Avatar of mbradley0@google.it"
+      height="100"
+      loading="lazy"
+      src="http://dummyimage.com/100x100.png/5fa2dd/ffffff"
+      width="100"
+    />
+    <br />
+    11/9/2016, 5:04:58 AM
+  </dt>
+  <dd
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    mbradley0@google.it
+  </dd>
+</Fragment>
+`;
+
+exports[`handles JavaScript hover 2`] = `
+<Fragment>
+  <dt>
+    <img
+      alt="Avatar of mbradley0@google.it"
+      height="100"
+      loading="lazy"
+      src="http://dummyimage.com/100x100.png/5fa2dd/ffffff"
+      width="100"
+    />
+    <br />
+    11/9/2016, 5:04:58 AM
+  </dt>
+  <dd
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus.
+  </dd>
+</Fragment>
+`;
+
+exports[`renders correctly 1`] = `
+<Fragment>
+  <dt>
+    <img
+      alt="Avatar of mbradley0@google.it"
+      height="100"
+      loading="lazy"
+      src="http://dummyimage.com/100x100.png/5fa2dd/ffffff"
+      width="100"
+    />
+    <br />
+    11/9/2016, 5:04:58 AM
+  </dt>
+  <dd
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus.
+  </dd>
+</Fragment>
+`;

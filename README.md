@@ -28,7 +28,3 @@ Do not modify `data.js` to achieve these tasks, and do not worry about the styli
 4. Display and format the timestamp of the message to be human readable
 
 5. Sort the messages by time
-
-## Submission
-
-Please upload your solution to your github account as a public repository, and send the URL to us.
