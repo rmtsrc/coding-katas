@@ -2,6 +2,10 @@
 
 Coding Katas which I've completed over the years.
 
+## [2018-react-redux-message-viewer](2018-react-redux-message-viewer)
+
+Message and member data processor and message viewer written in React and Redux.
+
 ## [2017-todo-react-redux-graphql-fullstack](2017-todo-react-redux-graphql-fullstack)
 
 A fullstack todo app application written using and tested using Docker, Node, React, Redux, Jest, GraphQL and PostgreSQL.

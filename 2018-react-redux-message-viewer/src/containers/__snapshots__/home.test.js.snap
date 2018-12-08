@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with data 1`] = `
+<Fragment>
+  <h1>
+    React Redux Message Viewer
+  </h1>
+  <dl
+    key="0"
+  >
+    <Message
+      avatar="http://dummyimage.com/100x100.png/5fa2dd/ffffff"
+      email="mbradley0@google.it"
+      message="Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus."
+      timestamp="2016-11-09T05:04:58Z"
+    />
+  </dl>
+  <dl
+    key="1"
+  >
+    <Message
+      avatar="http://dummyimage.com/100x100.jpg/dddddd/000000"
+      email="hhawkins1@posterous.com"
+      message="Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla."
+      timestamp="2017-02-09T04:27:38Z"
+    />
+  </dl>
+</Fragment>
+`;
+
+exports[`renders correctly with no data 1`] = `
+<Fragment>
+  <h1>
+    React Redux Message Viewer
+  </h1>
+</Fragment>
+`;
