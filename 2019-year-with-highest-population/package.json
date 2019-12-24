@@ -1,0 +1,9 @@
+{
+  "name": "2019-year-with-highest-population",
+  "version": "1.0.0",
+  "main": "highestPopulationYear.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node highestPopulationYear.js"
+  }
+}
