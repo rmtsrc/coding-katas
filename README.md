@@ -1,43 +1,55 @@
 # Coding Katas
 
-Coding Katas which I've completed over the years.
+[Coding Katas](https://en.wikipedia.org/wiki/Kata_(programming)) which I've completed over the years (mostly written in JavaScript/Node). These are broken down into [apps](#Apps) and [algorithms](#Algorithms).
 
-## [2018-react-redux-message-viewer](2018-react-redux-message-viewer)
+## Apps
 
-Message and member data processor and message viewer written in React and Redux.
+### [2018-react-redux-message-viewer](apps/2018-react-redux-message-viewer)
 
-## [2017-todo-react-redux-graphql-fullstack](2017-todo-react-redux-graphql-fullstack)
+Message and member data processor and message viewer. (Tech: React, Redux and Jest)
 
-A fullstack todo app application written using and tested using Docker, Node, React, Redux, Jest, GraphQL and PostgreSQL.
+### [2017-todo-react-redux-graphql-fullstack](apps/2017-todo-react-redux-graphql-fullstack)
 
-## [2017-lazy-evaluate](2017-lazy-evaluate)
+A fullstack todo app application. (Tech: Docker, Node, React, Redux, Jest, GraphQL and PostgreSQL)
 
-Evaluate a chain of functions at a later stage when the value is needed.
+### [2016-bill](apps/2016-bill)
 
-## [2017-flatten-tree-questions-answers](2017-flatten-tree-questions-answers)
+Download, parse, and display a customers bill. (Tech: React, Mocha, Chai)
 
-Takes an existing question set and user answers flattening it into a single usable data structure.
+### [2015-pairing-schedule](apps/2015-pairing-schedule)
 
-## [2016-bill](2016-bill)
+Accepts a list of developers and displays paired programming schedule. (Tech: Jest)
 
-Download, parse, and display a customers bill via React.
+### [2014-decimal-time](apps/2014-decimal-time)
 
-## [2016-martian-robots](2016-martian-robots)
+Displays the current time in [Decimal time](https://en.wikipedia.org/wiki/Decimal_time). (Tech: Backbone, jQuery, Underscore, Require.js, Handlebars, Grunt)
 
-Controlling and tracking a robot on a defined grid.
+## Algorithms
 
-## [2015-pairing-schedule](2015-pairing-schedule)
+### [2019-year-with-highest-population](algorithms/2019-year-with-highest-population)
 
-Accepts a list of developers and displays paired programming schedule.
+Given a list of people with their birth and death years, find the year with the highest population.
 
-## [2014-decimal-time](2014-decimal-time)
+### [2017-lazy-evaluate](algorithms/2017-lazy-evaluate)
 
-Displays the current time in [Decimal time](https://en.wikipedia.org/wiki/Decimal_time).
+Evaluate a chain of functions at a later stage when the value is needed. (Tech: Ava)
 
-## [2013-coins](2013-coins)
+### [2017-flatten-tree-questions-answers](algorithms/2017-flatten-tree-questions-answers)
 
-Takes an input in pounds and/or pence and works out the minimum amount of coins needed to make up that amount.
+Takes an existing question set and user answers flattening it into a single usable data structure. (Tech: Ava)
 
-## [2011-roman-numerals](2011-roman-numerals)
+### [2016-martian-robots](algorithms/2016-martian-robots)
+
+Controlling and tracking a robot on a defined grid. (Tech: Mocha, Chai)
+
+### [2015-debounce](algorithms/2015-debounce)
+
+Delaying execution of function until a number of milliseconds have past since the last time it was called.
+
+### [2013-coins](algorithms/2013-coins)
+
+Takes an input in pounds and/or pence and works out the minimum amount of coins needed to make up that amount. (Tech: Jasmine)
+
+### [2011-roman-numerals](algorithms/2011-roman-numerals)
 
 Generates roman numerals from decimal input.
