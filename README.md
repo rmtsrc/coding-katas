@@ -42,6 +42,10 @@ Displays the current time in [Decimal time](https://en.wikipedia.org/wiki/Decima
 
 A memozor that will return the last response given the same input argument from repeated calls without calling the function again.
 
+### [2020-event-emitter](algorithms/2020-event-emitter)
+
+Allows events to be defined, subscribed to (via a callback) and existing subscriptions can be released.
+
 ### [2019-year-with-highest-population](algorithms/2019-year-with-highest-population)
 
 Given a list of people with their birth and death years, find the year with the highest population.

@@ -1,0 +1,19 @@
+{
+  "name": "event-emitter",
+  "version": "1.0.0",
+  "description": "Subscribe, emit with callback and unsubscribe from events",
+  "main": "Emitter.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "jest": "^25.1.0"
+  },
+  "targets": {
+    "node": "current"
+  }
+}
