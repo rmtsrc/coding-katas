@@ -1,6 +1,15 @@
 # GitHub User Activity
 
-A React applications to search and display user activity on GitHub.
+An application to search and display user activity on GitHub.
+
+Live demo: https://github-activity-test.netlify.com/?username=gaearon
+
+Technologies used:
+
+* [React](https://reactjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Jest](https://jestjs.io/)
+* [Cypress](https://www.cypress.io/)
 
 ## Running
 
@@ -32,7 +41,7 @@ A React applications to search and display user activity on GitHub.
 
 *So that:* I can recognise my friends.
 
-![User search](cypress/integration/__image_snapshots__/Search  searches for a known user #0.png)
+<a href="cypress/integration/__image_snapshots__/Search%20%20searches%20for%20a%20known%20user%20%230.png"><img src="cypress/integration/__image_snapshots__/Search%20%20searches%20for%20a%20known%20user%20%230.png" alt="User search" width="400"></a>
 
 #### Displaying user's activities
 
@@ -42,4 +51,4 @@ A React applications to search and display user activity on GitHub.
 
 *So that:* I can understand their commit history.
 
-![User activity](cypress/integration/__image_snapshots__/Search  displays information about a users activity #0.png)
+<a href="cypress/integration/__image_snapshots__/Search%20%20displays%20information%20about%20a%20users%20activity%20%230.png"><img src="cypress/integration/__image_snapshots__/Search%20%20displays%20information%20about%20a%20users%20activity%20%230.png" alt="User activity" width="400"></a>

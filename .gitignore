@@ -24,3 +24,6 @@ yarn-error.log*
 
 # tailwind
 src/styles/tailwind.css
+
+# cypress
+cypress/videos

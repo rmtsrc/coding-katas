@@ -4,7 +4,8 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
-    jest: true
+    jest: true,
+    "cypress/globals": true
   },
   extends: [
     "airbnb",
@@ -12,7 +13,9 @@ module.exports = {
     "prettier",
     "prettier/react",
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
   ],
   globals: {
     Atomics: "readonly",
@@ -25,7 +28,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  plugins: ["react", "jsx-a11y", "prettier"],
+  plugins: ["react", "jsx-a11y", "prettier", "import", "cypress"],
   settings: {
     react: {
       version: "detect"
@@ -44,6 +47,20 @@ module.exports = {
       }
     ],
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "external",
+          "parent",
+          "sibling",
+          "index",
+          "internal"
+        ],
+        "newlines-between": "always"
+      }
+    ],
     "jsx-a11y/label-has-associated-control": [
       "error",
       {
