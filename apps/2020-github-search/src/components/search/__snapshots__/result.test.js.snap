@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<body>
+  <div>
+    <li
+      class="py-3"
+    >
+      <button
+        class="text-left flex items-center m-2"
+        type="button"
+      >
+        <img
+          alt="Avatar of JohnDoe"
+          class="w-10 h-10 rounded-full mr-4"
+          src="https://example.com/foo.png"
+        />
+        <div>
+          <p
+            class="text-gray-900 leading-none underline"
+          >
+            JohnDoe
+          </p>
+          <p
+            class="text-gray-600"
+          >
+            John Doe
+             
+            <span
+              class="italic"
+            >
+              <a
+                class="hover:underline"
+                href="mailto:john.doe@example.com"
+              >
+                john.doe@example.com
+              </a>
+            </span>
+          </p>
+        </div>
+      </button>
+    </li>
+  </div>
+</body>
+`;
+
+exports[`shows user commit details are loading when clicked 1`] = `
+<body>
+  <div>
+    <li
+      class="py-3"
+    >
+      <button
+        class="text-left flex items-center m-2"
+        type="button"
+      >
+        <img
+          alt="Avatar of JohnDoe"
+          class="w-10 h-10 rounded-full mr-4"
+          src="https://example.com/foo.png"
+        />
+        <div>
+          <p
+            class="text-gray-900 leading-none underline"
+          >
+            JohnDoe
+          </p>
+          <p
+            class="text-gray-600"
+          >
+            John Doe
+             
+            <span
+              class="italic"
+            >
+              <a
+                class="hover:underline"
+                href="mailto:john.doe@example.com"
+              >
+                john.doe@example.com
+              </a>
+            </span>
+          </p>
+        </div>
+      </button>
+      <div
+        class="border-t border-r border-b border-l border-gray-400 rounded-t rounded-b p-4"
+      >
+        <p
+          class="italic"
+        >
+          Loading...
+        </p>
+      </div>
+    </li>
+  </div>
+</body>
+`;

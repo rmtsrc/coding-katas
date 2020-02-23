@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="App"
+    >
+      <div
+        class="w-full max-w-md"
+      >
+        <form
+          action=""
+          class="px-8 py-8 pt-8"
+        >
+          <div
+            class="px-4 pb-4"
+          >
+            <label
+              class="text-xl block font-bold pb-2"
+              for="username"
+            >
+              Search for a GitHub username
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300 "
+              id="username"
+              name="username"
+              placeholder="for a user"
+              type="username"
+            />
+          </div>
+          <div
+            class="px-4 pb-4"
+          >
+            <input
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+              value="Search"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+`;

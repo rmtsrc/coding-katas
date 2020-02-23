@@ -4,6 +4,10 @@
 
 ## Apps
 
+### [2020-github-search](apps/2020-github-search)
+
+An application to search and display user activity on GitHub. (Tech: React, GraphQL, Tailwind CSS, Jest, Cypress)
+
 ### [2018-react-redux-message-viewer](apps/2018-react-redux-message-viewer)
 
 Message and member data processor and message viewer. (Tech: React, Redux and Jest)

@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a loading message when details are loading 1`] = `
+<body>
+  <div>
+    <p
+      class="italic"
+    >
+      Loading...
+    </p>
+  </div>
+</body>
+`;
+
+exports[`renders correctly with user commit history details 1`] = `
+<body>
+  <div>
+    <dl>
+      <dt>
+        GitHub profile
+      </dt>
+      <dd>
+        <a
+          class="underline"
+          href="https://github.com/gaearon"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          https://github.com/gaearon
+        </a>
+      </dd>
+      <dt>
+        Total contributions
+      </dt>
+      <dd>
+        3116
+      </dd>
+      <dt>
+        Total repositories contributed to
+      </dt>
+      <dd>
+        73
+      </dd>
+      <dt>
+        Total issues
+      </dt>
+      <dd>
+        116
+      </dd>
+      <dt>
+        Total pull requests
+      </dt>
+      <dd>
+        271
+      </dd>
+    </dl>
+    <h2
+      class="block font-bold text-l pb-2 py-4"
+    >
+      Latest commits
+    </h2>
+    <ul>
+      <li>
+        <a
+          class="underline font-bold"
+          href="https://github.com/facebook/react"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          react
+        </a>
+        <ol
+          class="list-inside list-decimal"
+        >
+          <li
+            class="truncate"
+          >
+            <span
+              title="2020-02-21T02:26:19Z"
+            >
+              Remove unused arguments in the reconciler (#18092)
+            </span>
+          </li>
+          <li
+            class="truncate"
+          >
+            <span
+              title="2020-02-19T17:59:42Z"
+            >
+              Don't build some packages for WWW (#18078)
+            </span>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a
+          class="underline font-bold"
+          href="https://github.com/bvaughn/react-devtools-experimental"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          react-devtools-experimental
+        </a>
+        <ol
+          class="list-inside list-decimal"
+        >
+          <li
+            class="truncate"
+          >
+            <span
+              title="2019-06-12T16:56:25Z"
+            >
+              Fix owner tree for legacy backend
+            </span>
+          </li>
+          <li
+            class="truncate"
+          >
+            <span
+              title="2019-06-12T16:23:29Z"
+            >
+              Distinguish functions and classes
+            </span>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a
+          class="underline font-bold"
+          href="https://github.com/gaearon/overreacted.io"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          overreacted.io
+        </a>
+        <ol
+          class="list-inside list-decimal"
+        >
+          <li
+            class="truncate"
+          >
+            <span
+              title="2020-01-11T21:30:50Z"
+            >
+              tweak
+            </span>
+          </li>
+          <li
+            class="truncate"
+          >
+            <span
+              title="2020-01-11T21:28:39Z"
+            >
+              typo
+            </span>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a
+          class="underline font-bold"
+          href="https://github.com/facebook/react-native"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          react-native
+        </a>
+        <ol
+          class="list-inside list-decimal"
+        >
+          <li
+            class="truncate"
+          >
+            <span
+              title="2020-02-12T22:05:09Z"
+            >
+              React Native sync for revisions 19f6fe1...241c446
+
+Summary:
+This sync includes the following changes:
+- **[57333ca33](https://github.com/facebook/react/commit/57333ca33 )**: Show first component stack in context warning (#17922) //&lt;Dan Abramov&gt;//
+- **[cf0081263](https://github.com/facebook/react/commit/cf0081263 )**: Upgrade to jest 25 (#17896) //&lt;Simen Bekkhus&gt;//
+- **[6faf6f5eb](https://github.com/facebook/react/commit/6faf6f5eb )**: Update to flow 0.97 (#17892) //&lt;Nicolas Gallagher&gt;//
+- **[81e30c7ff](https://github.com/facebook/react/commit/81e30c7ff )**: Remove unused modules from legacy event responders (#17907) //&lt;Nicolas Gallagher&gt;//
+- **[3c713d513](https://github.com/facebook/react/commit/3c713d513 )**: chore: update to latest release of babel (#17897) //&lt;Simen Bekkhus&gt;//
+- **[3b3decf87](https://github.com/facebook/react/commit/3b3decf87 )**: add warning when owner and self are different for string refs (#17864) //&lt;Luna Ruan&gt;//
+- **[6c00c5bba](https://github.com/facebook/react/commit/6c00c5bba )**: Update to flow-bin@0.89 (#17842) //&lt;Nicolas Gallagher&gt;//
+- **[cf7a0c24d](https://github.com/facebook/react/commit/cf7a0c24d )**: Remove dynamic GKs for selective/train (#17888) //&lt;Sebastian Markbåge&gt;//
+- **[c322f5913](https://github.com/facebook/react/commit/c322f5913 )**: Add unstable_renderSubtreeIntoContainer and unstable_createPortal feature flags (#17880) //&lt;Dominic Gannaway&gt;//
+- **[f2fd484af](https://github.com/facebook/react/commit/f2fd484af )**: Add React.createFactory() deprecation warning (#17878) //&lt;Dominic Gannaway&gt;//
+- **[0c04acaf8](https://github.com/facebook/react/commit/0c04acaf8 )**: Remove FB specific build (#17875) //&lt;Sebastian Markbåge&gt;//
+- **[9fd760ce7](https://github.com/facebook/react/commit/9fd760ce7 )**: Add disable &lt;textarea/&gt; children flag (#17874) //&lt;Dominic Gannaway&gt;//
+- **[a209a97ed](https://github.com/facebook/react/commit/a209a97ed )**: Add feature flag around React.createFactory (#17873) //&lt;Dominic Gannaway&gt;//
+- **[95bd7aad7](https://github.com/facebook/react/commit/95bd7aad7 )**: Remove renderPhaseUpdates Map (#17625) //&lt;Andrew Clark&gt;//
+- **[b43b36dd9](https://github.com/facebook/react/commit/b43b36dd9 )**: Remove ReactInstanceMap_DO_NOT_USE shim (#17861) //&lt;Dominic Gannaway&gt;//
+- **[9e075d16b](https://github.com/facebook/react/commit/9e075d16b )**: [react-interactions] Remove deprecated Scope APIs + update Focus components/docs (#17859) //&lt;Dominic Gannaway&gt;//
+- **[b6173e643](https://github.com/facebook/react/commit/b6173e643 )**: [react-interactions] Add DO_NOT_USE to Scope methods (#17835) //&lt;Dominic Gannaway&gt;//
+- **[f4ca909e0](https://github.com/facebook/react/commit/f4ca909e0 )**: react-refresh@0.7.2 //&lt;Dan&gt;//
+- **[255d9ac5f](https://github.com/facebook/react/commit/255d9ac5f )**: [Fresh] Fix edge case with early function call (#17824) //&lt;Dan Abramov&gt;//
+- **[d8570ec6e](https://github.com/facebook/react/commit/d8570ec6e )**: Create ReactFabric.stopSurface and use that for bridgeless mode binding (#16164) //&lt;Emily&gt;//
+- **[5d6129b5d](https://github.com/facebook/react/commit/5d6129b5d )**: Update ReactSuspenseList-test.internal.js (#17034) //&lt;Ganapati V S&gt;//
+- **[3ac81a57f](https://github.com/facebook/react/commit/3ac81a57f )**: Update create-react-app note for eslint-plugin-react-hooks (#16982) //&lt;Tao&gt;//
+- **[e70672149](https://github.com/facebook/react/commit/e70672149 )**: Update Flow to 0.84 (#17805) //&lt;Dan Abramov&gt;//
+- **[b979db4e7](https://github.com/facebook/react/commit/b979db4e7 )**: Bump Prettier (#17811) //&lt;Dan Abramov&gt;//
+
+Changelog:
+[General][Changed] - React Native sync for revisions 19f6fe1...241c446
+
+Reviewed By: yungsters
+
+Differential Revision: D19623180
+
+fbshipit-source-id: 3cdecb33aa66dfc21a2b347bf7f63a5b27fcf6ea
+            </span>
+          </li>
+          <li
+            class="truncate"
+          >
+            <span
+              title="2020-01-09T19:15:50Z"
+            >
+              React Native sync for revisions 6cff70a...19f6fe1
+
+Summary:
+This sync includes the following changes:
+- **[19f6fe170](https://github.com/facebook/react/commit/19f6fe170 )**: Revert "Revert "Dispatch commands to both UIManagers from both renderers (#17211)" (#17232)" (#17799) //&lt;Eli White&gt;//
+- **[6250462be](https://github.com/facebook/react/commit/6250462be )**: Renamed "ReactDOM-fb" imports to "ReactDOM" in www shims (#17797) //&lt;Brian Vaughn&gt;//
+- **[59f21f1b2](https://github.com/facebook/react/commit/59f21f1b2 )**: HostText needs to copy over from current if it is unchanged in persistent  mode (#17538) //&lt;Sebastian Markbåge&gt;//
+- **[ccc6100d7](https://github.com/facebook/react/commit/ccc6100d7 )**: Fix comments typos (#17550) //&lt;Nick S. Plekhanov&gt;//
+- **[1b9328cd9](https://github.com/facebook/react/commit/1b9328cd9 )**: Null stateNode after unmount (#17666) //&lt;Brian Vaughn&gt;//
+- **[897976600](https://github.com/facebook/react/commit/897976600 )**: [ESLint] Allow partial matches for custom Effect Hooks (#17663) //&lt;Dan Abramov&gt;//
+- **[72592310a](https://github.com/facebook/react/commit/72592310a )**: Create packages/dom-event-testing-library (#17660) //&lt;Nicolas Gallagher&gt;//
+- **[a5e951d4c](https://github.com/facebook/react/commit/a5e951d4c )**: [react-interactions] Event testing library improvements (#17614) //&lt;Nicolas Gallagher&gt;//
+- **[7dc974542](https://github.com/facebook/react/commit/7dc974542 )**: [Flight] Chunks API (#17398) //&lt;Sebastian Markbåge&gt;//
+- **[9354dd275](https://github.com/facebook/react/commit/9354dd275 )**: Make HostComponent inexact (#17412) //&lt;Eli White&gt;//
+- **[4c270375e](https://github.com/facebook/react/commit/4c270375e )**: Favor fallthrough switch instead of case statements for work tags (#17648) //&lt;Sebastian Markbåge&gt;//
+- **[6fef7c47a](https://github.com/facebook/react/commit/6fef7c47a )**: Add a regression test for switching from Fragment to a component (#17647) //&lt;Dan Abramov&gt;//
+- **[9fe103124](https://github.com/facebook/react/commit/9fe103124 )**: [react-interactions] Rename Flare APIs to deprecated and remove from RN (#17644) //&lt;Dominic Gannaway&gt;//
+- **[4b0cdf29a](https://github.com/facebook/react/commit/4b0cdf29a )**: Build FB RN targets only in experimental mode (#17641) //&lt;Dan Abramov&gt;//
+- **[7309c5f93](https://github.com/facebook/react/commit/7309c5f93 )**: Use zero-fill right shift instead of Math.floor (#17616) //&lt;伊撒尔&gt;//
+- **[3c54df091](https://github.com/facebook/react/commit/3c54df091 )**: Fix missing stacks in WWW warnings (#17638) //&lt;Dan Abramov&gt;//
+- **[b66e86d95](https://github.com/facebook/react/commit/b66e86d95 )**: react-refresh@0.7.1 //&lt;Dan Abramov&gt;//
+- **[c2d1561c6](https://github.com/facebook/react/commit/c2d1561c6 )**: [Fast Refresh] Support injecting runtime after renderer executes (#17633) //&lt;Dan Abramov&gt;//
+- **[f42431abe](https://github.com/facebook/react/commit/f42431abe )**: Revert "Remove renderPhaseUpdates Map (#17484)" (#17623) //&lt;Dan Abramov&gt;//
+- **[0b5a26a48](https://github.com/facebook/react/commit/0b5a26a48 )**: Rename toWarnDev -&gt; toErrorDev, toLowPriorityWarnDev -&gt; toWarnDev (#17605) //&lt;Dan Abramov&gt;//
+- **[0cf22a56a](https://github.com/facebook/react/commit/0cf22a56a )**: Use console directly instead of warning() modules (#17599) //&lt;Dan Abramov&gt;//
+- **[b6c423daa](https://github.com/facebook/react/commit/b6c423daa )**: Use matching test command for equivalence tests (#17604) //&lt;Dan Abramov&gt;//
+- **[8a347ed02](https://github.com/facebook/react/commit/8a347ed02 )**: Remove renderPhaseUpdates Map (#17484) //&lt;Sebastian Markbåge&gt;//
+- **[be603f5a5](https://github.com/facebook/react/commit/be603f5a5 )**: [react-events] Remove lastNativeEvent in favor of SystemFlags (#17585) //&lt;Dominic Gannaway&gt;//
+- **[b15bf3675](https://github.com/facebook/react/commit/b15bf3675 )**: Add component stacks to (almost) all warnings (#17586) //&lt;Dan Abramov&gt;//
+- **[2afeebdcc](https://github.com/facebook/react/commit/2afeebdcc )**: [react-interactions] Remove responder root event types + revert commit phase change (#17577) //&lt;Dominic Gannaway&gt;//
+- **[9ac42dd07](https://github.com/facebook/react/commit/9ac42dd07 )**: Remove the condition argument from warning() (#17568) //&lt;Laura buns&gt;//
+- **[7bf40e1cf](https://github.com/facebook/react/commit/7bf40e1cf )**: Initialize update queue object on mount (#17560) //&lt;Andrew Clark&gt;//
+- **[e039e690b](https://github.com/facebook/react/commit/e039e690b )**: Revert Update Queue Refactor //&lt;Andrew Clark&gt;//
+- **[b617db3d9](https://github.com/facebook/react/commit/b617db3d9 )**: Refactor Update Queues to Fix Rebasing Bug //&lt;Andrew Clark&gt;//
+- **[b43eec7ea](https://github.com/facebook/react/commit/b43eec7ea )**: Replace \`wrap-warning-with-env-check\` with an eslint plugin (#17540) //&lt;Laura buns&gt;//
+- **[acfe4b21b](https://github.com/facebook/react/commit/acfe4b21b )**: [react-interactions] Upgrade passive event listeners to active listeners (#17513) //&lt;Dominic Gannaway&gt;//
+- **[5064c7f6a](https://github.com/facebook/react/commit/5064c7f6a )**: Revert Rerender Error Check (#17519) //&lt;Sebastian Markbåge&gt;//
+- **[6d105ad3f](https://github.com/facebook/react/commit/6d105ad3f )**: [react-interactions] Move Flare event registration to commit phase (#17518) //&lt;Dominic Gannaway&gt;//
+- **[dc18b8b8d](https://github.com/facebook/react/commit/dc18b8b8d )**: Don't group Idle/Offscreen work with other work (#17456) //&lt;Sebastian Markbåge&gt;//
+- **[f523b2e0d](https://github.com/facebook/react/commit/f523b2e0d )**: Use fewer global variables in Hooks (#17480) //&lt;Sebastian Markbåge&gt;//
+- **[d75323f65](https://github.com/facebook/react/commit/d75323f65 )**: Remove case that only exists for createBatch (#17506) //&lt;Sebastian Markbåge&gt;//
+- **[79572e34d](https://github.com/facebook/react/commit/79572e34d )**: Adjust SuspenseList CPU bound heuristic (#17455) //&lt;Sebastian Markbåge&gt;//
+- **[969f4b5bb](https://github.com/facebook/react/commit/969f4b5bb )**: Change DevTools hook warning message (#17478) //&lt;Dan Abramov&gt;//
+- **[6470e0f16](https://github.com/facebook/react/commit/6470e0f16 )**: [Fresh] Make all errors recoverable (#17438) //&lt;Dan Abramov&gt;//
+
+Changelog:
+[General][Changed] - React sync for revisions 6cff70a...19f6fe1
+
+Reviewed By: TheSavior
+
+Differential Revision: D19318286
+
+fbshipit-source-id: acaa5224f7162a274c395a62e54da82199001005
+            </span>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a
+          class="underline font-bold"
+          href="https://github.com/reactjs/ru.reactjs.org"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          ru.reactjs.org
+        </a>
+        <ol
+          class="list-inside list-decimal"
+        >
+          <li
+            class="truncate"
+          >
+            <span
+              title="2019-12-18T22:11:19Z"
+            >
+              Add Chang Yan
+            </span>
+          </li>
+          <li
+            class="truncate"
+          >
+            <span
+              title="2019-12-18T22:07:31Z"
+            >
+              Actually, make this a special thanks and add Adam
+            </span>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+</body>
+`;
