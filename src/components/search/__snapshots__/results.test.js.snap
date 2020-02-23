@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly filtering out any users without ids 1`] = `
+<body>
+  <div>
+    <div
+      class="w-full max-w-md px-12 py-8"
+    >
+      <h2
+        class="text-xl block font-bold pb-2 py-4"
+      >
+        Search results (
+        2
+        )
+      </h2>
+      <ul>
+        <li
+          class="py-3"
+        >
+          <button
+            class="text-left flex items-center m-2"
+            type="button"
+          >
+            <img
+              alt="Avatar of JohnDoe"
+              class="w-10 h-10 rounded-full mr-4"
+              src="https://example.com/foo.png"
+            />
+            <div>
+              <p
+                class="text-gray-900 leading-none underline"
+              >
+                JohnDoe
+              </p>
+              <p
+                class="text-gray-600"
+              >
+                John Doe
+                 
+                <span
+                  class="italic"
+                >
+                  <a
+                    class="hover:underline"
+                    href="mailto:john.doe@example.com"
+                  >
+                    john.doe@example.com
+                  </a>
+                </span>
+              </p>
+            </div>
+          </button>
+        </li>
+        <li
+          class="py-3"
+        >
+          <button
+            class="text-left flex items-center m-2"
+            type="button"
+          >
+            <img
+              alt="Avatar of AnotherJohnDoe"
+              class="w-10 h-10 rounded-full mr-4"
+              src="https://example.com/foo.other.png"
+            />
+            <div>
+              <p
+                class="text-gray-900 leading-none underline"
+              >
+                AnotherJohnDoe
+              </p>
+              <p
+                class="text-gray-600"
+              >
+                Another John Doe
+                 
+                <span
+                  class="italic"
+                >
+                  <a
+                    class="hover:underline"
+                    href="mailto:another.john.doe@example.com"
+                  >
+                    another.john.doe@example.com
+                  </a>
+                </span>
+              </p>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+`;

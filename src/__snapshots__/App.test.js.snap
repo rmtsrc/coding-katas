@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays SearchResults component when username and data is returned 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="w-full max-w-md"
+    >
+      <form
+        action=""
+        class="px-8 py-8 pt-8"
+      >
+        <div
+          class="px-4 pb-4"
+        >
+          <label
+            class="text-xl block font-bold pb-2"
+            for="username"
+          >
+            Search for a GitHub username
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300 "
+            id="username"
+            name="username"
+            placeholder="gaearon"
+            type="username"
+          />
+        </div>
+        <div
+          class="px-4 pb-4"
+        >
+          <input
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+            value="Search"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+  <hr />
+  <div
+    class="w-full max-w-md px-12 py-8"
+  >
+    <h2
+      class="text-xl block font-bold pb-2 py-4"
+    >
+      Search results (3)
+    </h2>
+    <ul>
+      <li
+        class="py-3"
+      >
+        <button
+          class="text-left flex items-center m-2"
+          type="button"
+        >
+          <img
+            alt="Avatar of gaearon"
+            class="w-10 h-10 rounded-full mr-4"
+            src="https://avatars0.githubusercontent.com/u/810438?v=4"
+          />
+          <div>
+            <p
+              class="text-gray-900 leading-none underline"
+            >
+              gaearon
+            </p>
+            <p
+              class="text-gray-600"
+            >
+              Dan Abramov 
+              <span
+                class="italic"
+              >
+                <a
+                  class="hover:underline"
+                  href="mailto:dan.abramov@me.com"
+                >
+                  dan.abramov@me.com
+                </a>
+              </span>
+            </p>
+          </div>
+        </button>
+      </li>
+      <li
+        class="py-3"
+      >
+        <button
+          class="text-left flex items-center m-2"
+          type="button"
+        >
+          <img
+            alt="Avatar of yashguptaz"
+            class="w-10 h-10 rounded-full mr-4"
+            src="https://avatars1.githubusercontent.com/u/36479718?v=4"
+          />
+          <div>
+            <p
+              class="text-gray-900 leading-none underline"
+            >
+              yashguptaz
+            </p>
+            <p
+              class="text-gray-600"
+            >
+              Yash 
+              <span
+                class="italic"
+              >
+                <a
+                  class="hover:underline"
+                  href="mailto:yashguptaofficial@gmail.com"
+                >
+                  yashguptaofficial@gmail.com
+                </a>
+              </span>
+            </p>
+          </div>
+        </button>
+      </li>
+      <li
+        class="py-3"
+      >
+        <button
+          class="text-left flex items-center m-2"
+          type="button"
+        >
+          <img
+            alt="Avatar of gaearoney"
+            class="w-10 h-10 rounded-full mr-4"
+            src="https://avatars3.githubusercontent.com/u/55377986?v=4"
+          />
+          <div>
+            <p
+              class="text-gray-900 leading-none underline"
+            >
+              gaearoney
+            </p>
+            <p
+              class="text-gray-600"
+            >
+               
+              <span
+                class="italic"
+              >
+                <a
+                  class="hover:underline"
+                  href="mailto:"
+                />
+              </span>
+            </p>
+          </div>
+        </button>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`displays loading when a username is given, but data is not loaded 1`] = `
+<body>
+  <div>
+    <div
+      class="App"
+    >
+      <div
+        class="w-full max-w-md"
+      >
+        <form
+          action=""
+          class="px-8 py-8 pt-8"
+        >
+          <div
+            class="px-4 pb-4"
+          >
+            <label
+              class="text-xl block font-bold pb-2"
+              for="username"
+            >
+              Search for a GitHub username
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300 "
+              id="username"
+              name="username"
+              placeholder="JohnDoe"
+              type="username"
+            />
+          </div>
+          <div
+            class="px-4 pb-4"
+          >
+            <input
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+              value="Search"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr />
+    <p
+      class="px-12 py-8 italic"
+    >
+      Loading...
+    </p>
+  </div>
+</body>
+`;
+
+exports[`renders the search form 1`] = `
+<body>
+  <div>
+    <div
+      class="App"
+    >
+      <div
+        class="w-full max-w-md"
+      >
+        <form
+          action=""
+          class="px-8 py-8 pt-8"
+        >
+          <div
+            class="px-4 pb-4"
+          >
+            <label
+              class="text-xl block font-bold pb-2"
+              for="username"
+            >
+              Search for a GitHub username
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300 "
+              id="username"
+              name="username"
+              placeholder="e.g. JohnDoe"
+              type="username"
+            />
+          </div>
+          <div
+            class="px-4 pb-4"
+          >
+            <input
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+              value="Search"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+`;

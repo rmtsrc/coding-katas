@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there is no history 1`] = `
+<body>
+  <div>
+    <p
+      class="font-bold"
+    >
+      No recent commits found
+    </p>
+  </div>
+</body>
+`;
+
+exports[`renders history correctly 1`] = `
+<body>
+  <div>
+    <h2
+      class="block font-bold text-l pb-2 py-4"
+    >
+      Latest commits
+    </h2>
+    <ul>
+      <li>
+        <a
+          class="underline font-bold"
+          href="https://example.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          My Repo
+        </a>
+        <ol
+          class="list-inside list-decimal"
+        >
+          <li
+            class="truncate"
+          >
+            <span
+              title="01/01/2020"
+            >
+              A commit message
+            </span>
+          </li>
+          <li
+            class="truncate"
+          >
+            <span
+              title="02/01/2020"
+            >
+              A second commit message
+            </span>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+</body>
+`;
