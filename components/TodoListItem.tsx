@@ -1,26 +1,23 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { ListItem, CheckBox } from 'react-native-elements';
+import { TodoDispatch } from '../modal/TodoStore';
 
-export default function TodoListItem({
-  id,
-  task,
-  checked,
-  remove,
-  toggleDone,
-}) {
+export default function TodoListItem({ id, task, checked }) {
   return (
-    <ListItem
-      leftElement={
-        <CheckBox checked={checked} onPress={() => toggleDone(id)} />
-      }
-      title={task}
-      titleStyle={checked && styles.checkedText}
-      onPress={() => toggleDone(id)}
-      rightIcon={{ name: 'delete', onPress: () => remove(id) }}
-      bottomDivider
-      pad={0}
-    />
+    <TodoDispatch.Consumer>
+      {dispatch => (
+        <ListItem
+          leftElement={<CheckBox checked={checked} onPress={() => dispatch({ type: 'toggleDone', id })} />}
+          title={task}
+          titleStyle={checked && styles.checkedText}
+          onPress={() => dispatch({ type: 'toggleDone', id })}
+          rightIcon={{ name: 'delete', onPress: () => dispatch({ type: 'remove', id }) }}
+          bottomDivider
+          pad={0}
+        />
+      )}
+    </TodoDispatch.Consumer>
   );
 }
 

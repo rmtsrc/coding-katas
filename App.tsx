@@ -4,15 +4,15 @@ import Constants from 'expo-constants';
 
 import AddTodo from './components/AddItem';
 import TodoList from './components/TodoList';
-import { TodoProvider } from './modal/Todo';
+import { TodoStoreProvider } from './modal/TodoStore';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <TodoProvider>
+      <TodoStoreProvider>
         <AddTodo />
         <TodoList />
-      </TodoProvider>
+      </TodoStoreProvider>
     </SafeAreaView>
   );
 }
