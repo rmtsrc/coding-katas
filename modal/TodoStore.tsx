@@ -19,7 +19,7 @@ const defaultTodoList = [
 
 const todoReducer = (list, action) => {
   switch (action.type) {
-    case 'add':
+    case 'add': {
       return [
         ...list,
         {
@@ -28,17 +28,23 @@ const todoReducer = (list, action) => {
           done: false,
         },
       ];
-
-    case 'remove':
+    }
+    case 'edit': {
+      const index = list.findIndex(item => item.id === action.id);
+      const item = list[index];
+      return [...list.slice(0, index), { ...item, task: action.task }, ...list.slice(index + 1)];
+    }
+    case 'remove': {
       return list.filter(item => item.id !== action.id);
-
-    case 'toggleDone':
+    }
+    case 'toggleDone': {
       const index = list.findIndex(item => item.id === action.id);
       const item = list[index];
       return [...list.slice(0, index), { ...item, done: !item.done }, ...list.slice(index + 1)];
-
-    default:
+    }
+    default: {
       throw new Error(`Unknown action type: ${action.type}`);
+    }
   }
 };
 
