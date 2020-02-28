@@ -18,7 +18,7 @@ const defaultTodoList = [
   },
 ];
 
-const todoReducer = (list, action) => {
+export const todoReducer = (list, action) => {
   let newList;
   switch (action.type) {
     case 'loaded': {
