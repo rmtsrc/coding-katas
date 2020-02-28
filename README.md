@@ -4,6 +4,10 @@
 
 ## Apps
 
+### [2020-ReactNativeTodo](apps/2020-ReactNativeTodo)
+
+A [React Native](https://reactnative.dev/) Todo App, which uses [React Hooks](https://reactjs.org/docs/hooks-intro.html) to manage and persist state via `createContext`, `useReducer`, `useEffect`, and `useState`. Also uses [React Native Elements](https://react-native-elements.github.io/react-native-elements/).
+
 ### [2020-github-search](apps/2020-github-search)
 
 An application to search and display user activity on GitHub. (Tech: React, GraphQL, Tailwind CSS, Jest, Cypress)
