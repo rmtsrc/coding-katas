@@ -34,6 +34,10 @@ Displays the current time in [Decimal time](https://en.wikipedia.org/wiki/Decima
 
 ## Algorithms
 
+### [2020-custom-memoize](algorithms/2020-custom-memoize)
+
+A memozor that will return the last response given the same input argument from repeated calls without calling the function again.
+
 ### [2019-year-with-highest-population](algorithms/2019-year-with-highest-population)
 
 Given a list of people with their birth and death years, find the year with the highest population.
