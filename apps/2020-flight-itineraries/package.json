@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "engines": {
+    "node": "^12.10.0",
+    "npm": "^6.10.3"
+  },
+  "name": "flight-itineraries",
+  "version": "1.0.0",
+  "description": "Flight Itineraries",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylefmt --recursive 'src/**/*.scss'",
+    "lint:js": "eslint . --ignore-path ./.gitignore --ext .js,.jsx",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint": "npm run lint:js && npm run lint:scss"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^9.5.0",
+    "babel-eslint": "^10.0.3",
+    "backpack-react-scripts": "^7.0.2",
+    "bpk-component-button": "^3.2.15",
+    "bpk-component-card": "^2.0.36",
+    "bpk-component-grid": "^2.0.36",
+    "bpk-component-text": "^2.0.21",
+    "bpk-mixins": "^19.0.21",
+    "bpk-stylesheets": "^4.1.2",
+    "eslint": "^6.6.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-test-renderer": "^16.11.0",
+    "stylefmt": "^6.0.3",
+    "stylelint": "^11.1.1"
+  },
+  "browserslist": [
+    ">0.1%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ]
+}

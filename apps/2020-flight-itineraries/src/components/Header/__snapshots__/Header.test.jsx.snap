@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<header
+  className="Header"
+>
+  <a
+    href="/"
+  >
+    <span
+      className="Header__hidden-text"
+    >
+      Flight Itineraries
+    </span>
+    <img
+      alt="Flight Itineraries"
+      className="Header__logo-image"
+      src="logo192.png"
+    />
+  </a>
+</header>
+`;

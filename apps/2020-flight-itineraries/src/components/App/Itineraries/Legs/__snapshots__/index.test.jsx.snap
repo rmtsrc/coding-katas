@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Legs renders legs correctly 1`] = `
+<div>
+  <div
+    class="bpk-grid__container bpk-grid__container--full-width"
+  >
+    <div
+      class="bpk-grid__row bpk-grid__row--padded"
+    >
+      <div
+        class="bpk-grid__column bpk-grid__column--1 bpk-grid__column--padded"
+      >
+        <img
+          class="airlineImage"
+          src="/img/airlines/WZ.png"
+          title="Wizz Air"
+          width="25"
+        />
+      </div>
+      <div
+        class="bpk-grid__column bpk-grid__column--2 bpk-grid__column--padded"
+      >
+        15:35
+        <br />
+        <span
+          class="airport"
+        >
+          BUD
+        </span>
+      </div>
+      <div
+        class="bpk-grid__column bpk-grid__column--1.5 bpk-grid__column--padded"
+      >
+        <img
+          src="/img/arrow.png"
+        />
+      </div>
+      <div
+        class="bpk-grid__column bpk-grid__column--3 bpk-grid__column--padded"
+      >
+        17:00
+        <br />
+        <span
+          class="airport"
+        >
+          LTN
+        </span>
+      </div>
+      <div
+        class="bpk-grid__column bpk-grid__column--4 bpk-grid__column--padded duration"
+      >
+        <small>
+          2h 25
+          <br />
+          <span
+            class="direct"
+          >
+            Direct
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div
+    class="bpk-grid__container bpk-grid__container--full-width"
+  >
+    <div
+      class="bpk-grid__row bpk-grid__row--padded"
+    >
+      <div
+        class="bpk-grid__column bpk-grid__column--1 bpk-grid__column--padded"
+      >
+        <img
+          class="airlineImage"
+          src="/img/airlines/WZ.png"
+          title="Wizz Air"
+          width="25"
+        />
+      </div>
+      <div
+        class="bpk-grid__column bpk-grid__column--2 bpk-grid__column--padded"
+      >
+        19:45
+        <br />
+        <span
+          class="airport"
+        >
+          LTN
+        </span>
+      </div>
+      <div
+        class="bpk-grid__column bpk-grid__column--1.5 bpk-grid__column--padded"
+      >
+        <img
+          src="/img/arrow.png"
+        />
+      </div>
+      <div
+        class="bpk-grid__column bpk-grid__column--3 bpk-grid__column--padded"
+      >
+        21:10
+        <br />
+        <span
+          class="airport"
+        >
+          BUD
+        </span>
+      </div>
+      <div
+        class="bpk-grid__column bpk-grid__column--4 bpk-grid__column--padded duration"
+      >
+        <small>
+          2h 25
+          <br />
+          <span
+            class="direct"
+          >
+            Direct
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+`;

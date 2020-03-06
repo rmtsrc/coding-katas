@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly while loading 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <header
+      class="Header"
+    >
+      <a
+        href="/"
+      >
+        <span
+          class="Header__hidden-text"
+        >
+          Flight Itineraries
+        </span>
+        <img
+          alt="Flight Itineraries"
+          class="Header__logo-image"
+          src="logo192.png"
+        />
+      </a>
+    </header>
+    <main
+      class="App__main"
+    >
+      <p
+        class="bpk-text bpk-text--base"
+      >
+        Looking for flights...
+      </p>
+    </main>
+  </div>
+</div>
+`;
+
+exports[`App should render correctly with flight results 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <header
+      class="Header"
+    >
+      <a
+        href="/"
+      >
+        <span
+          class="Header__hidden-text"
+        >
+          Flight Itineraries
+        </span>
+        <img
+          alt="Flight Itineraries"
+          class="Header__logo-image"
+          src="logo192.png"
+        />
+      </a>
+    </header>
+    <main
+      class="App__main"
+    />
+  </div>
+</div>
+`;
+
+exports[`App should show an error if flights fail to load 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <header
+      class="Header"
+    >
+      <a
+        href="/"
+      >
+        <span
+          class="Header__hidden-text"
+        >
+          Skyscanner
+        </span>
+        <img
+          alt="Skyscanner"
+          class="Header__logo-image"
+          src="logo.svg"
+        />
+      </a>
+    </header>
+    <main
+      class="App__main"
+    >
+      <h2
+        class="bpk-text bpk-text--base"
+      >
+        Your flight results
+      </h2>
+      hello
+    </main>
+  </div>
+</div>
+`;
