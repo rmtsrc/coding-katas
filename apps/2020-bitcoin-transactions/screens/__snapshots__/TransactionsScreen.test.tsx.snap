@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransactionsScreen rendering a loading screen 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flex": 1,
+      },
+      Object {
+        "alignItems": "center",
+        "marginHorizontal": 50,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "rgba(96,100,109, 1)",
+        "fontSize": 17,
+        "lineHeight": 24,
+        "marginBottom": 20,
+        "textAlign": "center",
+      }
+    }
+  >
+    Loading...
+  </Text>
+</View>
+`;

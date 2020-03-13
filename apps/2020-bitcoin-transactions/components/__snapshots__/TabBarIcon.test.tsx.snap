@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabBarIcon rendering in focus 1`] = `
+<Icon
+  allowFontScaling={false}
+  color="#2f95dc"
+  name="access-point"
+  size={30}
+  style={
+    Object {
+      "marginBottom": -3,
+    }
+  }
+/>
+`;
+
+exports[`TabBarIcon rendering out of focus 1`] = `
+<Icon
+  allowFontScaling={false}
+  color="#ccc"
+  name="access-point"
+  size={30}
+  style={
+    Object {
+      "marginBottom": -3,
+    }
+  }
+/>
+`;

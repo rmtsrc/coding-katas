@@ -4,6 +4,10 @@
 
 ## Apps
 
+# [2020-bitcoin-transactions](apps/2020-bitcoin-transactions)
+
+A Blockchain transaction history viewer and account manager example app. (Tech: React Native, Expo, TypeScript, and Jest)
+
 ### [2020-flight-itineraries](apps/2020-flight-itineraries)
 
 Fetch and display a list of flight itineraries. (Tech: React and Jest)
