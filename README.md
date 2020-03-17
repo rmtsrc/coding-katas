@@ -4,6 +4,10 @@
 
 ## Apps
 
+# [2020-async-and-forms](apps/2020-async-and-forms)
+
+An example app showing how long operations can be run async and form handling and validation. (Tech: React)
+
 # [2020-bitcoin-transactions](apps/2020-bitcoin-transactions)
 
 A Blockchain transaction history viewer and account manager example app. (Tech: React Native, Expo, TypeScript, and Jest)
