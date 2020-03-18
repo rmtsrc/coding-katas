@@ -4,11 +4,11 @@
 
 ## Apps
 
-# [2020-async-and-forms](apps/2020-async-and-forms)
+### [2020-async-and-forms](apps/2020-async-and-forms)
 
-An example app showing how long operations can be run async and form handling and validation. (Tech: React)
+An example app showing how long operations can be run [async without blocking the main thread](https://snyk.io/blog/nodejs-how-even-quick-async-functions-can-block-the-event-loop-starve-io/) and form handling and validation. (Tech: React, and Jest)
 
-# [2020-bitcoin-transactions](apps/2020-bitcoin-transactions)
+### [2020-bitcoin-transactions](apps/2020-bitcoin-transactions)
 
 A Blockchain transaction history viewer and account manager example app. (Tech: React Native, Expo, TypeScript, and Jest)
 
