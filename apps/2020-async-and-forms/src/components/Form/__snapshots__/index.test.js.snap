@@ -1,0 +1,322 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form clearing the form 1`] = `
+<body>
+  <div>
+    <h1>
+      Sign up form
+    </h1>
+    <form
+      class="form"
+    >
+      <div
+        class=""
+      >
+        <label
+          for="email"
+        >
+          Email address *
+        </label>
+        <input
+          id="email"
+          type="email"
+          value="test@example.com"
+        />
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="name"
+        >
+          First name *
+        </label>
+        <input
+          id="name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="surname"
+        >
+          Last name *
+        </label>
+        <input
+          id="surname"
+          value=""
+        />
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="starsign"
+        >
+          Star sign
+        </label>
+        <input
+          id="starsign"
+          value=""
+        />
+      </div>
+      <input
+        class="clear"
+        type="reset"
+        value="Clear"
+      />
+      <input
+        class="submit"
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </div>
+</body>
+`;
+
+exports[`Form rendering correctly 1`] = `
+<body>
+  <div>
+    <h1>
+      Sign up form
+    </h1>
+    <form
+      class="form"
+    >
+      <div
+        class=""
+      >
+        <label
+          for="email"
+        >
+          Email address *
+        </label>
+        <input
+          id="email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="name"
+        >
+          First name *
+        </label>
+        <input
+          id="name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="surname"
+        >
+          Last name *
+        </label>
+        <input
+          id="surname"
+          value=""
+        />
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="starsign"
+        >
+          Star sign
+        </label>
+        <input
+          id="starsign"
+          value=""
+        />
+      </div>
+      <input
+        class="clear"
+        type="reset"
+        value="Clear"
+      />
+      <input
+        class="submit"
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </div>
+</body>
+`;
+
+exports[`Form submitting with errors 1`] = `
+<body>
+  <div>
+    <h1>
+      Sign up form
+    </h1>
+    <form
+      class="form"
+    >
+      <div
+        class="error"
+      >
+        <label
+          for="email"
+        >
+          Email address *
+        </label>
+        <input
+          id="email"
+          type="email"
+          value=""
+        />
+        <span>
+          Needs to be more than 2 characters
+        </span>
+      </div>
+      <div
+        class="error"
+      >
+        <label
+          for="name"
+        >
+          First name *
+        </label>
+        <input
+          id="name"
+          type="text"
+          value=""
+        />
+        <span>
+          Needs to be more than 2 characters
+        </span>
+      </div>
+      <div
+        class="error"
+      >
+        <label
+          for="surname"
+        >
+          Last name *
+        </label>
+        <input
+          id="surname"
+          value=""
+        />
+        <span>
+          Needs to be more than 2 characters
+        </span>
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="starsign"
+        >
+          Star sign
+        </label>
+        <input
+          id="starsign"
+          value=""
+        />
+      </div>
+      <input
+        class="clear"
+        type="reset"
+        value="Clear"
+      />
+      <input
+        class="submit"
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </div>
+</body>
+`;
+
+exports[`Form submitting without errors 1`] = `
+<body>
+  <div>
+    <h1>
+      Sign up form
+    </h1>
+    <form
+      class="form"
+    >
+      <div
+        class=""
+      >
+        <label
+          for="email"
+        >
+          Email address *
+        </label>
+        <input
+          id="email"
+          type="email"
+          value="test@example.com"
+        />
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="name"
+        >
+          First name *
+        </label>
+        <input
+          id="name"
+          type="text"
+          value="first"
+        />
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="surname"
+        >
+          Last name *
+        </label>
+        <input
+          id="surname"
+          value="last"
+        />
+      </div>
+      <div
+        class=""
+      >
+        <label
+          for="starsign"
+        >
+          Star sign
+        </label>
+        <input
+          id="starsign"
+          value=""
+        />
+      </div>
+      <input
+        class="clear"
+        type="reset"
+        value="Clear"
+      />
+      <input
+        class="submit"
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </div>
+</body>
+`;

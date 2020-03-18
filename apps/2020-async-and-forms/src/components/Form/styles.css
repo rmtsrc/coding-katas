@@ -1,6 +1,7 @@
 body {
   background-color: #f7f7f7;
   font-family: FuturaPT-Heavy, sans-serif;
+  width: 400px;
 }
 
 h1 {
@@ -11,7 +12,6 @@ h1 {
 .form {
   margin: 30px;
   padding: 32px;
-  width: 80%;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
@@ -28,9 +28,8 @@ h1 {
 }
 
 .form input {
-  width: 100%;
+  width: 90%;
   margin-top: 8px;
-  margin-bottom: 32px;
   font-size: 16px;
   line-height: 16px;
   border-radius: 4px;
@@ -38,11 +37,25 @@ h1 {
   padding: 16px;
 }
 
-.clear {
+input.clear {
+  border: solid 1px #000;
 }
 
-.submit {
+input.submit {
   border: none;
   background-color: rgba(251, 206, 7, 0.6);
   color: #242424;
+}
+
+div.error input {
+  border-color: red;
+}
+
+div {
+  margin-bottom: 32px;
+}
+
+div.error span {
+  font-size: small;
+  color: red;
 }
