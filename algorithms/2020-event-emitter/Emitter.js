@@ -1,28 +1,40 @@
 class Event {
-  constructor(name, callback) {
+  constructor(name, callback, unsubscribe) {
     this.name = name;
     this.callback = callback;
-    this.isReleased = false;
+    this.unsubscribe = unsubscribe;
   }
 
   release() {
-    this.isReleased = true;
+    this.unsubscribe(this.id);
   }
 }
 
 class Emitter {
-  subscriptions = [];
+  subscriptions = new Map();
 
   subscribe(eventName, callback) {
-    const event = new Event(eventName, callback);
-    this.subscriptions.push(event);
+    let events = [];
+    if (this.subscriptions.has(eventName)) {
+      events = this.subscriptions.get(eventName);
+    }
+
+    const unsubscribe = id => {
+      const events = this.subscriptions.get(eventName);
+      events.splice(id, 1);
+    };
+
+    const event = new Event(eventName, callback, unsubscribe);
+    event.id = events.push(event);
+
+    this.subscriptions.set(eventName, events);
     return event;
   }
 
   emit(eventName, ...args) {
-    this.subscriptions
-      .filter(subscription => subscription.name === eventName && !subscription.isReleased)
-      .map(event => event.callback(...args));
+    if (this.subscriptions.has(eventName)) {
+      this.subscriptions.get(eventName).map(event => event.callback(...args));
+    }
   }
 }
 
