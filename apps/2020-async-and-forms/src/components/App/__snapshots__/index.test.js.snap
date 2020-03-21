@@ -6,10 +6,10 @@ exports[`App complexity page 1`] = `
     <div
       style="margin: 10px;"
     >
-      <div>
+      <p>
         Value: 
         Not computed yet
-      </div>
+      </p>
       <button
         type="button"
       >
@@ -56,7 +56,19 @@ exports[`App default homepage 1`] = `
           Custom Hook
         </a>
       </li>
+      <li
+        class="exercise-list__item"
+      >
+        <a
+          href="/redux-toolkit"
+        >
+          Redux Toolkit
+        </a>
+      </li>
     </ul>
+    <div
+      style="margin: 10px;"
+    />
   </div>
 </body>
 `;
@@ -143,6 +155,9 @@ exports[`App form page 1`] = `
         </form>
       </div>
     </div>
+    <div
+      style="margin: 10px;"
+    />
   </div>
 </body>
 `;

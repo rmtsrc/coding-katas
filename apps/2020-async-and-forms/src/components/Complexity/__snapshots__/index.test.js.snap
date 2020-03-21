@@ -5,19 +5,15 @@ exports[`Complexity enter text and submit 1`] = `
   class=""
 >
   <div>
-    <div
-      style="margin: 10px;"
+    <p>
+      Value: 
+      209685000000
+    </p>
+    <button
+      type="button"
     >
-      <div>
-        Value: 
-        209685000000
-      </div>
-      <button
-        type="button"
-      >
-        Compute
-      </button>
-    </div>
+      Compute
+    </button>
   </div>
   <div
     class="ReactModalPortal"
@@ -36,19 +32,15 @@ exports[`Complexity open modal 1`] = `
     tabindex="0"
   />
   <div>
-    <div
-      style="margin: 10px;"
+    <p>
+      Value: 
+      Not computed yet
+    </p>
+    <button
+      type="button"
     >
-      <div>
-        Value: 
-        Not computed yet
-      </div>
-      <button
-        type="button"
-      >
-        Compute
-      </button>
-    </div>
+      Compute
+    </button>
   </div>
   <div
     class="ReactModalPortal"
@@ -94,19 +86,15 @@ exports[`Complexity open modal 1`] = `
 exports[`Complexity rendering correctly 1`] = `
 <body>
   <div>
-    <div
-      style="margin: 10px;"
+    <p>
+      Value: 
+      Not computed yet
+    </p>
+    <button
+      type="button"
     >
-      <div>
-        Value: 
-        Not computed yet
-      </div>
-      <button
-        type="button"
-      >
-        Compute
-      </button>
-    </div>
+      Compute
+    </button>
   </div>
   <div
     class="ReactModalPortal"

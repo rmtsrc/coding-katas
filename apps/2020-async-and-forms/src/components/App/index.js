@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import Complexity from "../Complexity";
-import Form from "../Form";
-import CustomHook from "../CustomHook";
+import Complexity from '../Complexity';
+import Form from '../Form';
+import CustomHook from '../CustomHook';
+import ReduxToolkit from '../ReduxToolkit';
 
-import "./styles.css";
+import './styles.css';
 
 export default () => {
   const page = window.location.pathname.slice(1);
@@ -22,14 +23,21 @@ export default () => {
           <li className="exercise-list__item">
             <a href="/custom-hook">Custom Hook</a>
           </li>
+          <li className="exercise-list__item">
+            <a href="/redux-toolkit">Redux Toolkit</a>
+          </li>
         </ul>
       )}
 
-      {page === "complexity" && <Complexity />}
+      {page === 'form' && <Form />}
 
-      {page === "form" && <Form />}
+      {page === 'custom-hook' && <CustomHook />}
 
-      {page === "custom-hook" && <CustomHook />}
+      <div style={{ margin: 10 }}>
+        {page === 'complexity' && <Complexity />}
+
+        {page === 'redux-toolkit' && <ReduxToolkit />}
+      </div>
     </>
   );
 };
