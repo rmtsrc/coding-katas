@@ -2,6 +2,7 @@ import React from "react";
 
 import Complexity from "../Complexity";
 import Form from "../Form";
+import CustomHook from "../CustomHook";
 
 import "./styles.css";
 
@@ -18,12 +19,17 @@ export default () => {
           <li className="exercise-list__item">
             <a href="/form">Form</a>
           </li>
+          <li className="exercise-list__item">
+            <a href="/custom-hook">Custom Hook</a>
+          </li>
         </ul>
       )}
 
       {page === "complexity" && <Complexity />}
 
       {page === "form" && <Form />}
+
+      {page === "custom-hook" && <CustomHook />}
     </>
   );
 };

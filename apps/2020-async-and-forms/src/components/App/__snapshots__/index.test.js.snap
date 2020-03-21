@@ -47,6 +47,15 @@ exports[`App default homepage 1`] = `
           Form
         </a>
       </li>
+      <li
+        class="exercise-list__item"
+      >
+        <a
+          href="/custom-hook"
+        >
+          Custom Hook
+        </a>
+      </li>
     </ul>
   </div>
 </body>
