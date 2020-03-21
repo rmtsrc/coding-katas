@@ -6,7 +6,7 @@ exports[`Complexity enter text and submit 1`] = `
 >
   <div>
     <div
-      class="results-container"
+      style="margin: 10px;"
     >
       <div>
         Value: 
@@ -37,7 +37,7 @@ exports[`Complexity open modal 1`] = `
   />
   <div>
     <div
-      class="results-container"
+      style="margin: 10px;"
     >
       <div>
         Value: 
@@ -95,7 +95,7 @@ exports[`Complexity rendering correctly 1`] = `
 <body>
   <div>
     <div
-      class="results-container"
+      style="margin: 10px;"
     >
       <div>
         Value: 

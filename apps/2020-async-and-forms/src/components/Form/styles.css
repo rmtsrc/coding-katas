@@ -1,15 +1,20 @@
-body {
+.Form {
   background-color: #f7f7f7;
   font-family: FuturaPT-Heavy, sans-serif;
+  height: 100%;
+}
+
+.FormContainer {
+  padding: 20px;
   width: 400px;
 }
 
-h1 {
+.Form h1 {
   text-align: center;
   font-size: 24px;
 }
 
-.form {
+.Form form {
   margin: 30px;
   padding: 32px;
   background-color: #fff;
@@ -18,16 +23,20 @@ h1 {
   background-color: #ffffff;
 }
 
-.form label,
-.form input {
+.Form form div {
+  margin-bottom: 32px;
+}
+
+.Form label,
+.Form input {
   display: block;
 }
 
-.form label {
+.Form label {
   font-size: 14px;
 }
 
-.form input {
+.Form input {
   width: 90%;
   margin-top: 8px;
   font-size: 16px;
@@ -37,25 +46,21 @@ h1 {
   padding: 16px;
 }
 
-input.clear {
+.Form .clear {
   border: solid 1px #000;
 }
 
-input.submit {
+.Form .submit {
   border: none;
   background-color: rgba(251, 206, 7, 0.6);
   color: #242424;
 }
 
-div.error input {
+.Form .error input {
   border-color: red;
 }
 
-div {
-  margin-bottom: 32px;
-}
-
-div.error span {
+.Form .error span {
   font-size: small;
   color: red;
 }

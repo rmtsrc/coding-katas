@@ -4,7 +4,7 @@ exports[`App complexity page 1`] = `
 <body>
   <div>
     <div
-      class="results-container"
+      style="margin: 10px;"
     >
       <div>
         Value: 
@@ -55,77 +55,85 @@ exports[`App default homepage 1`] = `
 exports[`App form page 1`] = `
 <body>
   <div>
-    <h1>
-      Sign up form
-    </h1>
-    <form
-      class="form"
+    <div
+      class="Form"
     >
       <div
-        class=""
+        class="FormContainer"
       >
-        <label
-          for="email"
+        <h1>
+          Sign up form
+        </h1>
+        <form
+          class="form"
         >
-          Email address *
-        </label>
-        <input
-          id="email"
-          type="email"
-          value=""
-        />
+          <div
+            class=""
+          >
+            <label
+              for="email"
+            >
+              Email address *
+            </label>
+            <input
+              id="email"
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            class=""
+          >
+            <label
+              for="name"
+            >
+              First name *
+            </label>
+            <input
+              id="name"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class=""
+          >
+            <label
+              for="surname"
+            >
+              Last name *
+            </label>
+            <input
+              id="surname"
+              value=""
+            />
+          </div>
+          <div
+            class=""
+          >
+            <label
+              for="starsign"
+            >
+              Star sign
+            </label>
+            <input
+              id="starsign"
+              value=""
+            />
+          </div>
+          <input
+            class="clear"
+            type="reset"
+            value="Clear"
+          />
+          <input
+            class="submit"
+            type="submit"
+            value="Submit"
+          />
+        </form>
       </div>
-      <div
-        class=""
-      >
-        <label
-          for="name"
-        >
-          First name *
-        </label>
-        <input
-          id="name"
-          type="text"
-          value=""
-        />
-      </div>
-      <div
-        class=""
-      >
-        <label
-          for="surname"
-        >
-          Last name *
-        </label>
-        <input
-          id="surname"
-          value=""
-        />
-      </div>
-      <div
-        class=""
-      >
-        <label
-          for="starsign"
-        >
-          Star sign
-        </label>
-        <input
-          id="starsign"
-          value=""
-        />
-      </div>
-      <input
-        class="clear"
-        type="reset"
-        value="Clear"
-      />
-      <input
-        class="submit"
-        type="submit"
-        value="Submit"
-      />
-    </form>
+    </div>
   </div>
 </body>
 `;

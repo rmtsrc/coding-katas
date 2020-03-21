@@ -3,6 +3,10 @@ import ReactModal from 'react-modal';
 
 import complexOperation from '../../utils';
 
+const resultStyle = {
+  margin: 10,
+};
+
 const modalStyle = {
   content: {
     top: '25%',
@@ -69,14 +73,16 @@ function Complexity() {
   const result = getResult();
   return (
     <>
-      <div className="results-container">
+      <div style={resultStyle}>
         <div>Value: {result}</div>
         <button type="button" onClick={openModalHandler}>
           Compute
         </button>
       </div>
       <ReactModal isOpen={open} style={modalStyle} contentLabel="Compute complex expression">
-        <h1><label htmlFor="complexity">Complexity</label></h1>
+        <h1>
+          <label htmlFor="complexity">Complexity</label>
+        </h1>
         <input id="complexity" value={complexity} onChange={handleComplexityChange} />
         <button type="button" onClick={computeHandle}>
           Apply
