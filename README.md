@@ -4,9 +4,9 @@
 
 ## Apps
 
-### [2020-async-and-forms](apps/2020-async-and-forms)
+### [2020-async-forms-hooks-redux](apps/2020-async-forms-hooks-redux)
 
-An example app showing how long operations can be run [async without blocking the main thread](https://snyk.io/blog/nodejs-how-even-quick-async-functions-can-block-the-event-loop-starve-io/) and form handling and validation. (Tech: React, and Jest)
+Examples showing how long operations can be run [async without blocking the main thread](https://snyk.io/blog/nodejs-how-even-quick-async-functions-can-block-the-event-loop-starve-io/), form handling and validation with and without [React Hook Form](https://react-hook-form.com), Building Custom React Hooks, and a Redux Toolkit example. (Tech: React, React Hook Form, Redux Toolkit, and Jest)
 
 ### [2020-bitcoin-transactions](apps/2020-bitcoin-transactions)
 

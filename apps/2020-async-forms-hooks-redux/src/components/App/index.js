@@ -2,6 +2,7 @@ import React from 'react';
 
 import Complexity from '../Complexity';
 import Form from '../Form';
+import FormHooks from '../FormHooks';
 import CustomHook from '../CustomHook';
 import ReduxToolkit from '../ReduxToolkit';
 
@@ -21,6 +22,9 @@ export default () => {
             <a href="/form">Form</a>
           </li>
           <li className="exercise-list__item">
+            <a href="/form-hooks">React Form Hook</a>
+          </li>
+          <li className="exercise-list__item">
             <a href="/custom-hook">Custom Hook</a>
           </li>
           <li className="exercise-list__item">
@@ -30,6 +34,8 @@ export default () => {
       )}
 
       {page === 'form' && <Form />}
+
+      {page === 'form-hooks' && <FormHooks />}
 
       {page === 'custom-hook' && <CustomHook />}
 

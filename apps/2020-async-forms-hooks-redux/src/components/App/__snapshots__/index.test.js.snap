@@ -51,6 +51,15 @@ exports[`App default homepage 1`] = `
         class="exercise-list__item"
       >
         <a
+          href="/form-hooks"
+        >
+          React Form Hook
+        </a>
+      </li>
+      <li
+        class="exercise-list__item"
+      >
+        <a
           href="/custom-hook"
         >
           Custom Hook
