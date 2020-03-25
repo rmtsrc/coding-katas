@@ -4,6 +4,10 @@
 
 ## Apps
 
+### [2020-bank-dashboard](apps/2020-bank-dashboard)
+
+Gather data from deliberately slow endpoints, process and generate a transaction list. (Tech: React and Jest)
+
 ### [2020-async-forms-hooks-redux](apps/2020-async-forms-hooks-redux)
 
 Examples showing how long operations can be run [async without blocking the main thread](https://snyk.io/blog/nodejs-how-even-quick-async-functions-can-block-the-event-loop-starve-io/), form handling and validation with and without [React Hook Form](https://react-hook-form.com), Building Custom React Hooks, and a Redux Toolkit example. (Tech: React, React Hook Form, Redux Toolkit, and Jest)
