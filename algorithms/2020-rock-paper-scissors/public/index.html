@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rock - Paper - Scissors</title>
+		<meta charset="UTF-8" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<h1>Rock, Paper, Scissors</h1>
+		<form id="game">
+			<fieldset>
+				<legend>Choose your weapon</legend>
+
+				<input type="radio" id="rock" name="weapon" value="rock" />
+				<label for="rock">Rock</label><br />
+
+				<input type="radio" id="paper" name="weapon" value="paper" />
+				<label for="paper">Paper</label><br />
+
+				<input type="radio" id="scissors" name="weapon" value="scissors" />
+				<label for="scissors">Scissors</label><br />
+
+				<input type="radio" id="computer" name="weapon" value="computer" />
+				<label for="computer">Let the computer decide</label>
+			</fieldset>
+			<input type="submit" value="Play" />
+			<input type="reset" value="Reset" />
+		</form>
+
+		<h2 class="results" aria-live="polite" aria-atomic="true"></h2>
+	</body>
+</html>

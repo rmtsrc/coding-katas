@@ -50,13 +50,17 @@ Displays the current time in [Decimal time](https://en.wikipedia.org/wiki/Decima
 
 ## Algorithms
 
+### [2020-rock-paper-scissors](algorithms/2020-rock-paper-scissors)
+
+A Rock, Paper, Scissors game with zero or single player modes (Tech: Jest)
+
 ### [2020-custom-memoize](algorithms/2020-custom-memoize)
 
-A memozor that will return the last response given the same input argument from repeated calls without calling the function again.
+A memozor that will return the last response given the same input argument from repeated calls without calling the function again. (Tech: Jest)
 
 ### [2020-event-emitter](algorithms/2020-event-emitter)
 
-Allows events to be defined, subscribed to (via a callback) and existing subscriptions can be released.
+Allows events to be defined, subscribed to (via a callback) and existing subscriptions can be released. (Tech: Jest)
 
 ### [2019-year-with-highest-population](algorithms/2019-year-with-highest-population)
 
