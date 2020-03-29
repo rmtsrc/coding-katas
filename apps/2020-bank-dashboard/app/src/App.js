@@ -1,52 +1,77 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const fetchUser = async userId => {
-  const response = await fetch(`http://localhost:3001/api/users/${userId}`);
-
-  return await response.json();
-};
-
 function App() {
-  const [transactions, setTransactions] = useState([]);
-  const [users, setUsers] = useState({});
+  const [state, setState] = useState({ transactions: [], users: {}, retailers: {} });
 
   useEffect(() => {
     const getTransactions = async () => {
-      const response = await fetch('http://localhost:3001/api/transactions');
-      // response.status
+      const response = await fetch('http://localhost:3001/transactions');
 
-      const trans = await response.json();
+      const transactions = await response.json();
+      setState(state => ({ ...state, transactions }));
 
-      trans.forEach(async transaction => {
-        if (!users[transaction.userId]) {
-          const user = await fetchUser(transaction.userId);
-          setUsers({ ...users, [transaction.userId]: user });
-        }
+      const users = {};
+      const retailers = {};
+      transactions.forEach(async transaction => {
+        const getUser = async userId => {
+          if (!users[userId]) {
+            users[userId] = { name: 'Loading...' };
+
+            const user = await fetch(`http://localhost:3001/users/${userId}`);
+            users[userId] = await user.json();
+            setState(state => ({ ...state, users }));
+          }
+        };
+        getUser(transaction.userId);
+
+        const getRetailer = async retailerId => {
+          if (!retailers[retailerId]) {
+            retailers[retailerId] = { name: 'Loading...', city: '' };
+
+            const retailer = await fetch(`http://localhost:3001/retailers/${retailerId}`);
+            retailers[retailerId] = await retailer.json();
+            setState(state => ({ ...state, retailers }));
+          }
+        };
+        getRetailer(transaction.retailerId);
       });
-
-      setTransactions(trans);
     };
     getTransactions();
   }, []);
 
+  const { transactions, users, retailers } = state;
   return (
     <div className="App">
       <h1>Transactions</h1>
-      <table>
-        <tr>
-          <th>Currency</th>
-          <th>Amount</th>
-          <th>User</th>
-        </tr>
-        {transactions.map(transaction => (
-          <tr>
-            <td>{transaction.currency}</td>
-            <td>{transaction.amount}</td>
-            <td>{users[transaction.userId] && users[transaction.userId].name}</td>
-          </tr>
-        ))}
-      </table>
+      {!transactions ? (
+        <p>Loading...</p>
+      ) : (
+        <table>
+          <thead>
+            <tr>
+              <th>Amount</th>
+              <th>User</th>
+              <th>Retailer</th>
+            </tr>
+          </thead>
+          <tbody>
+            {transactions.map(transaction => (
+              <tr key={transaction.id}>
+                <td>
+                  {transaction.amount} {transaction.currency}
+                </td>
+                <td>{users[transaction.userId] ? users[transaction.userId].name : 'Loading...'}</td>
+                <td>
+                  {retailers[transaction.retailerId]
+                    ? `${retailers[transaction.retailerId].name} ${retailers[transaction.retailerId].city}`
+                    : 'Loading...'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 }
