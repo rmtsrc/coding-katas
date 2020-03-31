@@ -1,50 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { observer, inject } from 'mobx-react';
 import './App.css';
 
-function App() {
-  const [state, setState] = useState({ transactions: [], users: {}, retailers: {} });
-
+function App({ bankStore }) {
   useEffect(() => {
-    const getTransactions = async () => {
-      const response = await fetch('http://localhost:3001/transactions');
+    bankStore.getTransactions();
+  }, [bankStore]);
 
-      const transactions = await response.json();
-      setState(state => ({ ...state, transactions }));
-
-      const users = {};
-      const retailers = {};
-      transactions.forEach(async transaction => {
-        const getUser = async userId => {
-          if (!users[userId]) {
-            users[userId] = { name: 'Loading...' };
-
-            const user = await fetch(`http://localhost:3001/users/${userId}`);
-            users[userId] = await user.json();
-            setState(state => ({ ...state, users }));
-          }
-        };
-        getUser(transaction.userId);
-
-        const getRetailer = async retailerId => {
-          if (!retailers[retailerId]) {
-            retailers[retailerId] = { name: 'Loading...', city: '' };
-
-            const retailer = await fetch(`http://localhost:3001/retailers/${retailerId}`);
-            retailers[retailerId] = await retailer.json();
-            setState(state => ({ ...state, retailers }));
-          }
-        };
-        getRetailer(transaction.retailerId);
-      });
-    };
-    getTransactions();
-  }, []);
-
-  const { transactions, users, retailers } = state;
   return (
     <div className="App">
       <h1>Transactions</h1>
-      {!transactions ? (
+      {!bankStore.transactions.length ? (
         <p>Loading...</p>
       ) : (
         <table>
@@ -56,15 +22,17 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            {transactions.map(transaction => (
+            {bankStore.transactions.map(transaction => (
               <tr key={transaction.id}>
                 <td>
                   {transaction.amount} {transaction.currency}
                 </td>
-                <td>{users[transaction.userId] ? users[transaction.userId].name : 'Loading...'}</td>
+                <td>{bankStore.users[transaction.userId] ? bankStore.users[transaction.userId].name : 'Loading...'}</td>
                 <td>
-                  {retailers[transaction.retailerId]
-                    ? `${retailers[transaction.retailerId].name} ${retailers[transaction.retailerId].city}`
+                  {bankStore.retailers[transaction.retailerId]
+                    ? `${bankStore.retailers[transaction.retailerId].name} ${
+                        bankStore.retailers[transaction.retailerId].city
+                      }`
                     : 'Loading...'}
                 </td>
               </tr>
@@ -76,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default inject(({ bankStore }) => ({ bankStore }))(observer(App));

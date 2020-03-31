@@ -6,7 +6,7 @@
 
 ### [2020-bank-dashboard](apps/2020-bank-dashboard)
 
-Gather data from deliberately slow endpoints, process and generate a transaction list. (Tech: React and Jest)
+Gather data from deliberately slow endpoints, process and generate a transaction list. (Tech: React, MobX and Jest)
 
 ### [2020-async-forms-hooks-redux](apps/2020-async-forms-hooks-redux)
 

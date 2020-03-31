@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders loading screen 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <h1>
+      Transactions
+    </h1>
+    <p>
+      Loading...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`App renders with transaction & user data, with retailer data loading 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <h1>
+      Transactions
+    </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Amount
+          </th>
+          <th>
+            User
+          </th>
+          <th>
+            Retailer
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1
+             
+            USD
+          </td>
+          <td>
+            Joe Bloggs
+          </td>
+          <td>
+            Loading...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`App renders with transaction data with other data loading 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <h1>
+      Transactions
+    </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Amount
+          </th>
+          <th>
+            User
+          </th>
+          <th>
+            Retailer
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1
+             
+            USD
+          </td>
+          <td>
+            Loading...
+          </td>
+          <td>
+            Loading...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`App renders with transaction, user & retailer data 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <h1>
+      Transactions
+    </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Amount
+          </th>
+          <th>
+            User
+          </th>
+          <th>
+            Retailer
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1
+             
+            USD
+          </td>
+          <td>
+            Joe Bloggs
+          </td>
+          <td>
+            Test Company Test City
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+             
+            GBP
+          </td>
+          <td>
+            Customer 2
+          </td>
+          <td>
+            Test Company2 Test City2
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
