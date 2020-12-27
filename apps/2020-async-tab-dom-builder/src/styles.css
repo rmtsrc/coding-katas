@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  padding: 0 1em;
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+  padding: 0.5em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  color: rgb(61, 61, 61);
+  margin: 0;
+  padding: 0.8em 1em;
+  border-bottom: 1px #cccccc solid;
+  cursor: pointer;
+}
+
+nav li.active {
+  border: 1px #cccccc solid;
+  border-radius: 0.3em 0.3em 0 0;
+  border-bottom: none;
+  background-color: white;
+}
+
+article {
+  position: relative;
+  top: -9px;
+  border-top: 1px #cccccc solid;
+  padding: 1.5em 0;
+}

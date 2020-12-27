@@ -4,6 +4,10 @@
 
 ## Apps
 
+### [2020-async-tab-dom-builder](apps/2020-async-tab-dom-builder)
+
+Concurrently requests asynchronous data, rendering it into a tabbed UI via a simple React like API. (Tech: Jest and testing-library)
+
 ### [2020-bank-dashboard](apps/2020-bank-dashboard)
 
 Gather data from deliberately slow endpoints, process and generate a transaction list. (Tech: React, MobX and Jest)
